@@ -1,0 +1,11 @@
+﻿OriginID;ID;camadasConvolucionais;maxpooling1;batchNormalization1;camadasDensas;dropout;learningIndex;batchIndex;numEpocas;maxpooling2;maxpooling3;maxpooling4;maxpooling5;maxpooling6;maxpooling7;maxpooling8;batchNormalization2;batchNormalization3;batchNormalization4;batchNormalization5;batchNormalization6;batchNormalization7;batchNormalization8;numFiltrosInd2;numFiltrosInd3;numFiltrosInd4;numFiltrosInd5;numFiltrosInd6;numFiltrosInd7;numFiltrosInd8;tamanhoFiltros2;tamanhoFiltros3;tamanhoFiltros4;tamanhoFiltros5;tamanhoFiltros6;tamanhoFiltros7;tamanhoFiltros8;neuroniosDensos1;neuroniosDensos2;Media;tempo medio
+51;IR5;2;1;1;2;0,44;5;4;227;1;;;;;;;0;;;;;;;7;;;;;;;7;;;;;;;26;;0,665419444;1710,153319
+25;IR1;2;1;1;2;0,38;4;5;101;1;;;;;;;0;;;;;;;7;;;;;;;9;;;;;;;40;;0,752965331;241,8587295
+1;IR2;2;1;1;2;0,24;5;5;187;1;;;;;;;0;;;;;;;5;;;;;;;7;;;;;;;68;;0,764699066;1110,452532
+39;IR3;2;1;1;1;0,34;4;6;207;1;;;;;;;0;;;;;;;5;;;;;;;9;;;;;;;;;0,789840353;222,9194499
+32;IR4;4;1;0;2;0,34;4;9;150;1;1;0;;;;;0;0;0;;;;;7;6;7;;;;;9;7;11;;;;;100;;0,796724355;438,6502936
+50;OP1;4;0;0;2;0,29;4;7;100;1;1;0;;;;;0;0;0;;;;;6;7;6;;;;;7;7;9;;;;;8;;0,691459954;784
+0;OP2;4;1;1;2;0,47;5;4;231;0;1;0;;;;;0;0;0;;;;;5;5;8;;;;;5;7;9;;;;;50;;0,700742364;12245
+92;OP3;3;1;0;2;0,32;5;6;158;0;1;;;;;;0;0;;;;;;8;7;;;;;;7;7;;;;;;49;;0,706633449;4333
+36;OP4;4;1;0;2;0,22;4;10;138;0;1;0;;;;;0;0;0;;;;;8;6;6;;;;;7;7;9;;;;;47;;0,716466963;1559
+64;OP5;5;1;0;2;0,27;4;8;62;0;1;0;1;;;;0;0;0;0;;;;7;6;7;6;;;;7;7;9;5;;;;15;;0,717452168;632

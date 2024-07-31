@@ -1,0 +1,715 @@
+(optuna) D:\Users\SuperUser\OneDrive\mestrado\pesquisa\optuna\cifar-10>python keras_simple_cifar10_exp4.py
+2024-06-27 22:19:34.219992: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-27 22:19:35.225646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1616] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6656 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 4060 Ti, pci bus id: 0000:01:00.0, compute capability: 8.9
+1 Physical GPUs, 1 Logical GPUs
+D:\Users\SuperUser\OneDrive\mestrado\pesquisa\optuna\cifar-10\keras_simple_cifar10_exp4.py:157: ExperimentalWarning: JournalStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  storage = JournalStorage(JournalFileStorage("optuna-journal4.log"))
+[I 2024-06-27 22:19:35,835] Using an existing study with name 'Experiment4' instead of creating a new one.
+   0%|                                                 | 00:00/36:32:36 Convolutional Layers: 3
+ Dense Layers: 3
+ Learning rate: 0.01
+ Batch Size: 32
+ Epochs: 205
+2024-06-27 22:19:37.501661: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+2024-06-27 22:19:38.914309: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] INTERNAL: ptxas exited with non-zero error code -1, output:
+Relying on driver to perform ptx compilation.
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2024-06-27 22:19:40.476277: I tensorflow/stream_executor/cuda/cuda_blas.cc:1614] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+Epoch 18: early stopping
+[I 2024-06-27 22:25:42,485] Trial 1 finished with value: 2.1425483226776123 and parameters: {'n_conv_layers': 3, 'n_dense_layers': 3, 'maxpooling0': True, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 7, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 6, 'kernel_size2': 5, 'maxpooling2': True, 'batchnormalization2': True, 'dropout': 0.2419648705045957, 'num_hidden_neurons0': 5, 'num_hidden_neurons1': 9, 'learnind': 2, 'batchind': 5, 'epochs': 205}. Best is trial 0 with value: 1.1473191976547241.
+Best trial: 0. Best value: 1.14732:    0%|             | 06:06/36:32:36 Convolutional Layers: 7
+ Dense Layers: 2
+ Learning rate: 1
+ Batch Size: 16
+ Epochs: 276
+Epoch 30: early stopping
+[I 2024-06-27 22:41:13,699] Trial 3 finished with value: 5.334942817687988 and parameters: {'n_conv_layers': 7, 'n_dense_layers': 2, 'maxpooling0': True, 'batchnormalization0': False, 'filtersind1': 7, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': False, 'filtersind2': 5, 'kernel_size2': 3, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 8, 'kernel_size3': 7, 'maxpooling3': False, 'batchnormalization3': False, 'filtersind4': 8, 'kernel_size4': 3, 'maxpooling4': False, 'batchnormalization4': False, 'filtersind5': 7, 'kernel_size5': 5, 'maxpooling5': False, 'batchnormalization5': False, 'filtersind6': 5, 'kernel_size6': 5, 'maxpooling6': False, 'batchnormalization6': False, 'dropout': 0.18556950263150168, 'num_hidden_neurons0': 17, 'learnind': 0, 'batchind': 4, 'epochs': 276}. Best is trial 2 with value: 0.9845523238182068.
+Best trial: 2. Best value: 0.984552:    1%|            | 21:37/36:32:36 Convolutional Layers: 2
+ Dense Layers: 3
+ Learning rate: 0.01
+ Batch Size: 256
+ Epochs: 250
+Epoch 16: early stopping
+[I 2024-06-27 22:43:15,090] Trial 6 finished with value: 2.3031585216522217 and parameters: {'n_conv_layers': 2, 'n_dense_layers': 3, 'maxpooling0': True, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 7, 'maxpooling1': True, 'batchnormalization1': False, 'dropout': 0.20150137995872347, 'num_hidden_neurons0': 5, 'num_hidden_neurons1': 5, 'learnind': 2, 'batchind': 8, 'epochs': 250}. Best is trial 2 with value: 0.9845523238182068.
+Best trial: 2. Best value: 0.984552:    1%|▏           | 23:39/36:32:36 Convolutional Layers: 5
+ Dense Layers: 3
+ Learning rate: 1e-05
+ Batch Size: 64
+ Epochs: 18
+[I 2024-06-27 22:58:48,324] Trial 7 finished with value: 1.7118852138519287 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 3, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 6, 'kernel_size1': 11, 'maxpooling1': False, 'batchnormalization1': False, 'filtersind2': 6, 'kernel_size2': 5, 'maxpooling2': False, 'batchnormalization2': True, 'filtersind3': 7, 'kernel_size3': 3, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 7, 'kernel_size4': 9, 'maxpooling4': False, 'batchnormalization4': True, 'dropout': 0.19468806394254384, 'num_hidden_neurons0': 67, 'num_hidden_neurons1': 4, 'learnind': 5, 'batchind': 6, 'epochs': 18}. Best is trial 2 with value: 0.9845523238182068.
+Best trial: 2. Best value: 0.984552:    2%|▏           | 39:12/36:32:36 Convolutional Layers: 2
+ Dense Layers: 2
+ Learning rate: 1e-05
+ Batch Size: 128
+ Epochs: 52
+[I 2024-06-27 23:06:49,048] Trial 8 finished with value: 0.9253563284873962 and parameters: {'n_conv_layers': 2, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 5, 'kernel_size1': 7, 'maxpooling1': True, 'batchnormalization1': True, 'dropout': 0.25294802208464573, 'num_hidden_neurons0': 114, 'learnind': 5, 'batchind': 7, 'epochs': 52}. Best is trial 8 with value: 0.9253563284873962.
+Best trial: 8. Best value: 0.925356:    2%|▎           | 47:13/36:32:36 Convolutional Layers: 3
+ Dense Layers: 3
+ Learning rate: 0.1
+ Batch Size: 32
+ Epochs: 145
+Epoch 10: early stopping
+[I 2024-06-27 23:08:41,029] Trial 9 finished with value: 3.2608649730682373 and parameters: {'n_conv_layers': 3, 'n_dense_layers': 3, 'maxpooling0': True, 'batchnormalization0': True, 'filtersind1': 6, 'kernel_size1': 3, 'maxpooling1': False, 'batchnormalization1': False, 'filtersind2': 5, 'kernel_size2': 7, 'maxpooling2': True, 'batchnormalization2': False, 'dropout': 0.24610618128233747, 'num_hidden_neurons0': 14, 'num_hidden_neurons1': 108, 'learnind': 1, 'batchind': 5, 'epochs': 145}. Best is trial 8 with value: 0.9253563284873962.
+Best trial: 8. Best value: 0.925356:    2%|▎           | 49:05/36:32:36 Convolutional Layers: 8
+ Dense Layers: 1
+ Learning rate: 0.1
+ Batch Size: 64
+ Epochs: 30
+Epoch 9: early stopping
+[I 2024-06-27 23:10:22,099] Trial 10 finished with value: 2.46051025390625 and parameters: {'n_conv_layers': 8, 'n_dense_layers': 1, 'maxpooling0': True, 'batchnormalization0': False, 'filtersind1': 5, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 7, 'maxpooling2': True, 'batchnormalization2': False, 'filtersind3': 8, 'kernel_size3': 5, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 11, 'batchnormalization4': False, 'filtersind5': 6, 'kernel_size5': 3, 'batchnormalization5': False, 'filtersind6': 5, 'kernel_size6': 7, 'batchnormalization6': False, 'filtersind7': 8, 'kernel_size7': 3, 'batchnormalization7': True, 'dropout': 0.47920517343282076, 'learnind': 1, 'batchind': 6, 'epochs': 30}. Best is trial 8 with value: 0.9253563284873962.
+Best trial: 8. Best value: 0.925356:    2%|▎           | 50:46/36:32:36 Convolutional Layers: 1
+ Dense Layers: 2
+ Learning rate: 1e-05
+ Batch Size: 1024
+ Epochs: 83
+[I 2024-06-27 23:15:25,681] Trial 11 finished with value: 1.1131418943405151 and parameters: {'n_conv_layers': 1, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'dropout': 0.3635438643179314, 'num_hidden_neurons0': 121, 'learnind': 5, 'batchind': 10, 'epochs': 83}. Best is trial 8 with value: 0.9253563284873962.
+Best trial: 8. Best value: 0.925356:    3%|▎           | 55:49/36:32:36 Convolutional Layers: 6
+ Dense Layers: 1
+ Learning rate: 0.0001
+ Batch Size: 512
+ Epochs: 115
+Epoch 15: early stopping
+[I 2024-06-27 23:32:50,171] Trial 12 finished with value: 0.9935249090194702 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 1, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 9, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 3, 'maxpooling2': False, 'batchnormalization2': True, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': False, 'batchnormalization3': True, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'filtersind5': 8, 'kernel_size5': 3, 'maxpooling5': True, 'batchnormalization5': True, 'dropout': 0.02546229480884099, 'learnind': 4, 'batchind': 9, 'epochs': 115}. Best is trial 8 with value: 0.9253563284873962.
+Best trial: 8. Best value: 0.925356:    3%|▎         | 1:13:14/36:32:36 Convolutional Layers: 8
+ Dense Layers: 2
+ Learning rate: 0.0001
+ Batch Size: 16
+ Epochs: 80
+Epoch 10: early stopping
+[I 2024-06-28 00:03:56,793] Trial 13 finished with value: 0.7563077807426453 and parameters: {'n_conv_layers': 8, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 11, 'maxpooling2': False, 'batchnormalization2': True, 'filtersind3': 7, 'kernel_size3': 11, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 6, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'filtersind5': 8, 'kernel_size5': 9, 'maxpooling5': True, 'batchnormalization5': True, 'filtersind6': 8, 'kernel_size6': 5, 'batchnormalization6': True, 'filtersind7': 5, 'kernel_size7': 5, 'batchnormalization7': False, 'dropout': 0.34382867200279227, 'num_hidden_neurons0': 49, 'learnind': 4, 'batchind': 4, 'epochs': 80}. Best is trial 13 with value: 0.7563077807426453.
+Best trial: 13. Best value: 0.756308:    5%|▍        | 1:44:20/36:32:36 Convolutional Layers: 1
+ Dense Layers: 2
+ Learning rate: 0.0001
+ Batch Size: 16
+ Epochs: 78
+Epoch 15: early stopping
+[I 2024-06-28 00:07:41,693] Trial 15 finished with value: 1.1630862951278687 and parameters: {'n_conv_layers': 1, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'dropout': 0.3373467732203834, 'num_hidden_neurons0': 42, 'learnind': 4, 'batchind': 4, 'epochs': 78}. Best is trial 13 with value: 0.7563077807426453.
+Best trial: 13. Best value: 0.756308:    5%|▍        | 1:48:05/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.0001
+ Batch Size: 256
+ Epochs: 62
+Epoch 13: early stopping
+[I 2024-06-28 00:18:16,304] Trial 16 finished with value: 0.8145796060562134 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 5, 'kernel_size1': 7, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 11, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 11, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 5, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.3389674611391957, 'num_hidden_neurons0': 45, 'learnind': 4, 'batchind': 8, 'epochs': 62}. Best is trial 14 with value: 0.7094420790672302.
+Best trial: 14. Best value: 0.709442:    5%|▍        | 1:58:40/36:32:36 Convolutional Layers: 8
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 170
+Epoch 21: early stopping
+[I 2024-06-28 01:44:06,663] Trial 18 finished with value: 0.9202409982681274 and parameters: {'n_conv_layers': 8, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 9, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 11, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 7, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 6, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'filtersind5': 8, 'kernel_size5': 7, 'maxpooling5': True, 'batchnormalization5': True, 'filtersind6': 8, 'kernel_size6': 9, 'batchnormalization6': True, 'filtersind7': 5, 'kernel_size7': 7, 'batchnormalization7': False, 'dropout': 0.3754240961863392, 'num_hidden_neurons0': 29, 'learnind': 3, 'batchind': 4, 'epochs': 170}. Best is trial 14 with value: 0.7094420790672302.
+Best trial: 14. Best value: 0.709442:    9%|▊        | 3:24:30/36:32:36 Convolutional Layers: 6
+ Dense Layers: 1
+ Learning rate: 0.001
+ Batch Size: 32
+ Epochs: 109
+Epoch 12: early stopping
+[I 2024-06-28 02:08:11,965] Trial 21 finished with value: 0.676855742931366 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 1, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 3, 'maxpooling1': False, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 9, 'maxpooling3': False, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 5, 'maxpooling4': True, 'batchnormalization4': False, 'filtersind5': 5, 'kernel_size5': 11, 'maxpooling5': False, 'batchnormalization5': True, 'dropout': 0.40648875240277, 'learnind': 3, 'batchind': 5, 'epochs': 109}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   10%|▉        | 3:48:36/36:32:36 Convolutional Layers: 6
+ Dense Layers: 1
+ Learning rate: 0.001
+ Batch Size: 32
+ Epochs: 149
+Epoch 17: early stopping
+[I 2024-06-28 02:59:44,531] Trial 24 finished with value: 0.9007748961448669 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 1, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': False, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 5, 'kernel_size3': 9, 'maxpooling3': False, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 5, 'maxpooling4': True, 'batchnormalization4': False, 'filtersind5': 6, 'kernel_size5': 11, 'maxpooling5': False, 'batchnormalization5': True, 'dropout': 0.28834033953697585, 'learnind': 3, 'batchind': 5, 'epochs': 149}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   13%|█▏       | 4:40:08/36:32:36 Convolutional Layers: 5
+ Dense Layers: 1
+ Learning rate: 0.01
+ Batch Size: 64
+ Epochs: 51
+Epoch 7: early stopping
+[I 2024-06-28 03:18:58,919] Trial 26 finished with value: 2.1618993282318115 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 1, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': False, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 3, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 9, 'maxpooling3': False, 'batchnormalization3': True, 'filtersind4': 8, 'kernel_size4': 5, 'maxpooling4': False, 'batchnormalization4': False, 'dropout': 0.4121860563059096, 'learnind': 2, 'batchind': 6, 'epochs': 51}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   14%|█▏       | 4:59:23/36:32:36 Convolutional Layers: 6
+ Dense Layers: 1
+ Learning rate: 0.0001
+ Batch Size: 16
+ Epochs: 182
+Epoch 14: early stopping
+[I 2024-06-28 03:57:45,108] Trial 27 finished with value: 1.1771084070205688 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 1, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 11, 'maxpooling1': False, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': True, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 9, 'maxpooling3': False, 'batchnormalization3': False, 'filtersind4': 7, 'kernel_size4': 11, 'maxpooling4': True, 'batchnormalization4': False, 'filtersind5': 6, 'kernel_size5': 11, 'maxpooling5': False, 'batchnormalization5': False, 'dropout': 0.29720095426884263, 'learnind': 4, 'batchind': 4, 'epochs': 182}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   15%|█▍       | 5:38:09/36:32:36 Convolutional Layers: 4
+ Dense Layers: 2
+ Learning rate: 0.0001
+ Batch Size: 32
+ Epochs: 130
+Epoch 63: early stopping
+[I 2024-06-28 07:13:40,225] Trial 28 finished with value: 1.0236867666244507 and parameters: {'n_conv_layers': 4, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 7, 'maxpooling1': False, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 7, 'kernel_size3': 7, 'maxpooling3': False, 'batchnormalization3': True, 'dropout': 0.39790459329833106, 'num_hidden_neurons0': 9, 'learnind': 4, 'batchind': 5, 'epochs': 130}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   24%|██▏      | 8:54:04/36:32:36 Convolutional Layers: 7
+ Dense Layers: 3
+ Learning rate: 0.01
+ Batch Size: 16
+ Epochs: 97
+Epoch 9: early stopping
+[I 2024-06-28 07:25:37,448] Trial 36 finished with value: 2.448942184448242 and parameters: {'n_conv_layers': 7, 'n_dense_layers': 3, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 6, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 5, 'maxpooling4': True, 'batchnormalization4': True, 'filtersind5': 5, 'kernel_size5': 9, 'maxpooling5': True, 'batchnormalization5': True, 'filtersind6': 6, 'kernel_size6': 7, 'batchnormalization6': False, 'dropout': 0.2109238912889289, 'num_hidden_neurons0': 26, 'num_hidden_neurons1': 118, 'learnind': 2, 'batchind': 4, 'epochs': 97}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   25%|██▏      | 9:06:01/36:32:36 Convolutional Layers: 8
+ Dense Layers: 3
+ Learning rate: 1
+ Batch Size: 16
+ Epochs: 215
+Epoch 30: early stopping
+[I 2024-06-28 07:43:33,401] Trial 38 finished with value: 21.764427185058594 and parameters: {'n_conv_layers': 8, 'n_dense_layers': 3, 'maxpooling0': True, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 3, 'maxpooling2': True, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 3, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 6, 'kernel_size4': 5, 'batchnormalization4': False, 'filtersind5': 7, 'kernel_size5': 5, 'batchnormalization5': True, 'filtersind6': 6, 'kernel_size6': 7, 'batchnormalization6': False, 'filtersind7': 7, 'kernel_size7': 9, 'batchnormalization7': True, 'dropout': 0.13189239243436196, 'num_hidden_neurons0': 8, 'num_hidden_neurons1': 45, 'learnind': 0, 'batchind': 4, 'epochs': 215}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   26%|██▎      | 9:23:57/36:32:36 Convolutional Layers: 7
+ Dense Layers: 3
+ Learning rate: 0.0001
+ Batch Size: 16
+ Epochs: 126
+Epoch 16: early stopping
+[I 2024-06-28 07:58:35,327] Trial 40 finished with value: 1.0608460903167725 and parameters: {'n_conv_layers': 7, 'n_dense_layers': 3, 'maxpooling0': True, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': False, 'filtersind2': 8, 'kernel_size2': 5, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 5, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 5, 'maxpooling4': True, 'batchnormalization4': True, 'filtersind5': 6, 'kernel_size5': 7, 'batchnormalization5': False, 'filtersind6': 7, 'kernel_size6': 11, 'batchnormalization6': True, 'dropout': 0.2242993047479242, 'num_hidden_neurons0': 7, 'num_hidden_neurons1': 45, 'learnind': 4, 'batchind': 4, 'epochs': 126}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   26%|██▍      | 9:38:59/36:32:36 Convolutional Layers: 6
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 32
+ Epochs: 114
+Epoch 23: early stopping
+[I 2024-06-28 08:16:19,366] Trial 42 finished with value: 0.8048278093338013 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 7, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 6, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 7, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'filtersind5': 5, 'kernel_size5': 9, 'maxpooling5': True, 'batchnormalization5': True, 'dropout': 0.27147860248361017, 'num_hidden_neurons0': 4, 'learnind': 3, 'batchind': 5, 'epochs': 114}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   27%|██▍      | 9:56:43/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 64
+ Epochs: 69
+Epoch 19: early stopping
+[I 2024-06-28 08:32:58,566] Trial 43 finished with value: 0.7536314725875854 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 7, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 8, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 3, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.3206202562705933, 'num_hidden_neurons0': 14, 'learnind': 3, 'batchind': 6, 'epochs': 69}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   28%|██▏     | 10:13:22/36:32:36 Convolutional Layers: 6
+ Dense Layers: 2
+ Learning rate: 1e-05
+ Batch Size: 32
+ Epochs: 293
+Epoch 44: early stopping
+[I 2024-06-28 08:48:58,845] Trial 45 finished with value: 1.033464789390564 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 6, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 5, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 7, 'kernel_size3': 5, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'filtersind5': 5, 'kernel_size5': 9, 'maxpooling5': True, 'batchnormalization5': True, 'dropout': 0.17551432332006273, 'num_hidden_neurons0': 17, 'learnind': 5, 'batchind': 5, 'epochs': 293}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   29%|██▎     | 10:29:23/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.01
+ Batch Size: 128
+ Epochs: 27
+Epoch 24: early stopping
+[I 2024-06-28 09:03:25,927] Trial 47 finished with value: 1.7637990713119507 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': False, 'filtersind2': 6, 'kernel_size2': 7, 'maxpooling2': False, 'batchnormalization2': True, 'filtersind3': 8, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.3269099079486174, 'num_hidden_neurons0': 6, 'learnind': 2, 'batchind': 7, 'epochs': 27}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   29%|██▎     | 10:43:50/36:32:36 Convolutional Layers: 5
+ Dense Layers: 1
+ Learning rate: 0.0001
+ Batch Size: 16
+ Epochs: 76
+Epoch 12: early stopping
+[I 2024-06-28 09:15:35,388] Trial 48 finished with value: 0.690428614616394 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 1, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 7, 'kernel_size1': 9, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 3, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 8, 'kernel_size3': 5, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 3, 'maxpooling4': False, 'batchnormalization4': False, 'dropout': 0.3666380445046361, 'learnind': 4, 'batchind': 4, 'epochs': 76}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   30%|██▍     | 10:55:59/36:32:36 Convolutional Layers: 7
+ Dense Layers: 1
+ Learning rate: 1e-05
+ Batch Size: 16
+ Epochs: 87
+Epoch 17: early stopping
+[I 2024-06-28 09:40:13,060] Trial 49 finished with value: 0.8617252707481384 and parameters: {'n_conv_layers': 7, 'n_dense_layers': 1, 'maxpooling0': True, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 9, 'maxpooling1': False, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 3, 'maxpooling2': False, 'batchnormalization2': True, 'filtersind3': 8, 'kernel_size3': 5, 'maxpooling3': False, 'batchnormalization3': False, 'filtersind4': 8, 'kernel_size4': 3, 'maxpooling4': False, 'batchnormalization4': False, 'filtersind5': 5, 'kernel_size5': 11, 'maxpooling5': False, 'batchnormalization5': True, 'filtersind6': 5, 'kernel_size6': 7, 'maxpooling6': True, 'batchnormalization6': False, 'dropout': 0.3731878675251297, 'learnind': 5, 'batchind': 4, 'epochs': 87}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   31%|██▍     | 11:20:37/36:32:36 Convolutional Layers: 5
+ Dense Layers: 1
+ Learning rate: 0.0001
+ Batch Size: 16
+ Epochs: 66
+Epoch 11: early stopping
+[I 2024-06-28 10:06:47,540] Trial 52 finished with value: 0.8043298721313477 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 1, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 7, 'kernel_size1': 9, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 3, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 8, 'kernel_size3': 11, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 3, 'maxpooling4': False, 'batchnormalization4': False, 'dropout': 0.35202352310814733, 'learnind': 4, 'batchind': 4, 'epochs': 66}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   32%|██▌     | 11:47:11/36:32:36 Convolutional Layers: 4
+ Dense Layers: 1
+ Learning rate: 0.0001
+ Batch Size: 16
+ Epochs: 77
+Epoch 9: early stopping
+[I 2024-06-28 10:19:55,460] Trial 54 finished with value: 0.8203526139259338 and parameters: {'n_conv_layers': 4, 'n_dense_layers': 1, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 7, 'kernel_size1': 7, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 5, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 8, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': False, 'dropout': 0.27534104945063964, 'learnind': 4, 'batchind': 4, 'epochs': 77}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   33%|██▋     | 12:00:19/36:32:36 Convolutional Layers: 3
+ Dense Layers: 3
+ Learning rate: 0.001
+ Batch Size: 32
+ Epochs: 54
+Epoch 8: early stopping
+[I 2024-06-28 10:33:13,263] Trial 57 finished with value: 2.3055570125579834 and parameters: {'n_conv_layers': 3, 'n_dense_layers': 3, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 11, 'maxpooling2': False, 'batchnormalization2': False, 'dropout': 0.39724515271621574, 'num_hidden_neurons0': 70, 'num_hidden_neurons1': 20, 'learnind': 3, 'batchind': 5, 'epochs': 54}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   33%|██▋     | 12:13:37/36:32:36 Convolutional Layers: 6
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 512
+ Epochs: 33
+Epoch 14: early stopping
+[I 2024-06-28 10:42:45,925] Trial 59 finished with value: 0.7160629630088806 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': False, 'batchnormalization4': True, 'filtersind5': 7, 'kernel_size5': 3, 'maxpooling5': True, 'batchnormalization5': True, 'dropout': 0.058896557640784, 'num_hidden_neurons0': 35, 'learnind': 3, 'batchind': 9, 'epochs': 33}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   34%|██▋     | 12:23:10/36:32:36 Convolutional Layers: 6
+ Dense Layers: 1
+ Learning rate: 0.0001
+ Batch Size: 512
+ Epochs: 11
+[I 2024-06-28 10:50:13,322] Trial 60 finished with value: 1.0557817220687866 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 1, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 6, 'kernel_size1': 9, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 7, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': False, 'batchnormalization4': True, 'filtersind5': 7, 'kernel_size5': 3, 'maxpooling5': True, 'batchnormalization5': True, 'dropout': 0.030017981980699937, 'learnind': 4, 'batchind': 9, 'epochs': 11}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   34%|██▋     | 12:30:37/36:32:36 Convolutional Layers: 6
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 512
+ Epochs: 29
+Epoch 13: early stopping
+[I 2024-06-28 10:59:14,485] Trial 62 finished with value: 0.8920283913612366 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': False, 'batchnormalization4': True, 'filtersind5': 8, 'kernel_size5': 3, 'maxpooling5': True, 'batchnormalization5': False, 'dropout': 0.07174437517581844, 'num_hidden_neurons0': 56, 'learnind': 3, 'batchind': 9, 'epochs': 29}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   35%|██▊     | 12:39:38/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 256
+ Epochs: 106
+Epoch 12: early stopping
+[I 2024-06-28 11:09:39,315] Trial 63 finished with value: 0.7331163883209229 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': False, 'batchnormalization4': True, 'dropout': 0.06475688313613534, 'num_hidden_neurons0': 36, 'learnind': 3, 'batchind': 8, 'epochs': 106}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   35%|██▊     | 12:50:03/36:32:36 Convolutional Layers: 8
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 256
+ Epochs: 106
+Epoch 11: early stopping
+[I 2024-06-28 11:27:14,799] Trial 65 finished with value: 2.0783767700195312 and parameters: {'n_conv_layers': 8, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 9, 'maxpooling3': False, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': False, 'batchnormalization4': True, 'filtersind5': 7, 'kernel_size5': 5, 'maxpooling5': True, 'batchnormalization5': True, 'filtersind6': 8, 'kernel_size6': 9, 'maxpooling6': False, 'batchnormalization6': True, 'filtersind7': 6, 'kernel_size7': 7, 'maxpooling7': False, 'batchnormalization7': False, 'dropout': 0.0636965657251759, 'num_hidden_neurons0': 35, 'learnind': 3, 'batchind': 8, 'epochs': 106}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   36%|██▊     | 13:07:38/36:32:36 Convolutional Layers: 6
+ Dense Layers: 2
+ Learning rate: 0.01
+ Batch Size: 512
+ Epochs: 137
+Epoch 15: early stopping
+[I 2024-06-28 11:44:35,581] Trial 67 finished with value: 0.9976997971534729 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 11, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': True, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 6, 'kernel_size4': 5, 'maxpooling4': False, 'batchnormalization4': False, 'filtersind5': 6, 'kernel_size5': 3, 'maxpooling5': False, 'batchnormalization5': True, 'dropout': 0.041477036256454936, 'num_hidden_neurons0': 22, 'learnind': 2, 'batchind': 9, 'epochs': 137}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   37%|██▉     | 13:24:59/36:32:36 Convolutional Layers: 2
+ Dense Layers: 2
+ Learning rate: 0.0001
+ Batch Size: 512
+ Epochs: 93
+Epoch 18: early stopping
+[I 2024-06-28 11:46:47,105] Trial 69 finished with value: 1.0906517505645752 and parameters: {'n_conv_layers': 2, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 5, 'kernel_size1': 3, 'maxpooling1': False, 'batchnormalization1': True, 'dropout': 0.08917929090391902, 'num_hidden_neurons0': 57, 'learnind': 4, 'batchind': 9, 'epochs': 93}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   37%|██▉     | 13:27:11/36:32:36 Convolutional Layers: 7
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 1024
+ Epochs: 153
+Epoch 22: early stopping
+[I 2024-06-28 12:17:16,995] Trial 70 finished with value: 0.8938469886779785 and parameters: {'n_conv_layers': 7, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 7, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': True, 'filtersind3': 7, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': False, 'batchnormalization4': True, 'filtersind5': 8, 'kernel_size5': 7, 'maxpooling5': False, 'batchnormalization5': False, 'filtersind6': 7, 'kernel_size6': 3, 'maxpooling6': True, 'batchnormalization6': True, 'dropout': 0.4277977800535186, 'num_hidden_neurons0': 22, 'learnind': 3, 'batchind': 10, 'epochs': 153}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   38%|███     | 13:57:41/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 256
+ Epochs: 59
+Epoch 11: early stopping
+[I 2024-06-28 12:24:17,601] Trial 72 finished with value: 0.7552767992019653 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 7, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.11798718628661846, 'num_hidden_neurons0': 41, 'learnind': 3, 'batchind': 8, 'epochs': 59}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   39%|███     | 14:04:41/36:32:36 Convolutional Layers: 4
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 128
+ Epochs: 50
+Epoch 16: early stopping
+[I 2024-06-28 12:33:57,587] Trial 74 finished with value: 2.3036293983459473 and parameters: {'n_conv_layers': 4, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 7, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': False, 'dropout': 0.15196702099092832, 'num_hidden_neurons0': 32, 'learnind': 3, 'batchind': 7, 'epochs': 50}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   39%|███     | 14:14:21/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.01
+ Batch Size: 16
+ Epochs: 20
+Epoch 18: early stopping
+[I 2024-06-28 13:08:37,686] Trial 77 finished with value: 1.996212124824524 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 3, 'maxpooling3': False, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.10519181418245177, 'num_hidden_neurons0': 26, 'learnind': 2, 'batchind': 4, 'epochs': 20}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   41%|███▏    | 14:49:01/36:32:36 Convolutional Layers: 7
+ Dense Layers: 3
+ Learning rate: 0.0001
+ Batch Size: 256
+ Epochs: 39
+Epoch 13: early stopping
+[I 2024-06-28 13:16:34,649] Trial 80 finished with value: 0.9157301783561707 and parameters: {'n_conv_layers': 7, 'n_dense_layers': 3, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': False, 'batchnormalization1': False, 'filtersind2': 6, 'kernel_size2': 3, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 3, 'maxpooling4': True, 'batchnormalization4': False, 'filtersind5': 5, 'kernel_size5': 11, 'maxpooling5': True, 'batchnormalization5': True, 'filtersind6': 6, 'kernel_size6': 5, 'maxpooling6': False, 'batchnormalization6': False, 'dropout': 0.0014076007673499242, 'num_hidden_neurons0': 47, 'num_hidden_neurons1': 69, 'learnind': 4, 'batchind': 8, 'epochs': 39}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   41%|███▎    | 14:56:58/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.0001
+ Batch Size: 128
+ Epochs: 84
+Epoch 13: early stopping
+[I 2024-06-28 13:25:32,369] Trial 82 finished with value: 0.8615410923957825 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.04969449209897645, 'num_hidden_neurons0': 63, 'learnind': 4, 'batchind': 7, 'epochs': 84}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   41%|███▎    | 15:05:56/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 128
+ Epochs: 42
+Epoch 10: early stopping
+[I 2024-06-28 13:33:23,005] Trial 83 finished with value: 0.7088359594345093 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.02203300686262296, 'num_hidden_neurons0': 27, 'learnind': 3, 'batchind': 7, 'epochs': 42}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   42%|███▎    | 15:13:47/36:32:36 Convolutional Layers: 6
+ Dense Layers: 2
+ Learning rate: 0.0001
+ Batch Size: 128
+ Epochs: 32
+Epoch 12: early stopping
+[I 2024-06-28 13:43:53,216] Trial 85 finished with value: 0.8173815608024597 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 9, 'maxpooling4': True, 'batchnormalization4': True, 'filtersind5': 6, 'kernel_size5': 9, 'maxpooling5': False, 'batchnormalization5': True, 'dropout': 0.03617809943213304, 'num_hidden_neurons0': 19, 'learnind': 4, 'batchind': 7, 'epochs': 32}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   42%|███▎    | 15:24:17/36:32:36 Convolutional Layers: 6
+ Dense Layers: 2
+ Learning rate: 0.0001
+ Batch Size: 64
+ Epochs: 98
+Epoch 10: early stopping
+[I 2024-06-28 13:54:55,304] Trial 87 finished with value: 0.8053314685821533 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 11, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 6, 'kernel_size4': 5, 'maxpooling4': True, 'batchnormalization4': True, 'filtersind5': 6, 'kernel_size5': 9, 'maxpooling5': False, 'batchnormalization5': True, 'dropout': 0.02170554550960064, 'num_hidden_neurons0': 24, 'learnind': 4, 'batchind': 6, 'epochs': 98}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   43%|███▍    | 15:35:19/36:32:36 Convolutional Layers: 5
+ Dense Layers: 1
+ Learning rate: 1e-05
+ Batch Size: 16
+ Epochs: 76
+Epoch 9: early stopping
+[I 2024-06-28 14:05:40,639] Trial 90 finished with value: 1.1486645936965942 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 1, 'maxpooling0': True, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 9, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': True, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 9, 'maxpooling3': False, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 11, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.08436645046897975, 'learnind': 5, 'batchind': 4, 'epochs': 76}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   43%|███▍    | 15:46:04/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 128
+ Epochs: 60
+Epoch 11: early stopping
+[I 2024-06-28 14:12:13,523] Trial 92 finished with value: 0.80193692445755 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 7, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.06406316208717248, 'num_hidden_neurons0': 39, 'learnind': 3, 'batchind': 7, 'epochs': 60}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   43%|███▍    | 15:52:37/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 128
+ Epochs: 119
+Epoch 14: early stopping
+[I 2024-06-28 14:20:31,052] Trial 93 finished with value: 0.7581267952919006 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 7, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.0801081129251074, 'num_hidden_neurons0': 14, 'learnind': 3, 'batchind': 7, 'epochs': 119}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   44%|███▌    | 16:00:55/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 128
+ Epochs: 86
+Epoch 13: early stopping
+[I 2024-06-28 14:31:06,990] Trial 94 finished with value: 0.9068115949630737 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.35952804007319905, 'num_hidden_neurons0': 31, 'learnind': 3, 'batchind': 7, 'epochs': 86}. Best is trial 21 with value: 0.676855742931366.
+Best trial: 21. Best value: 0.676856:   44%|███▌    | 16:11:31/36:32:36 Convolutional Layers: 4
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 128
+ Epochs: 251
+Epoch 21: early stopping
+[I 2024-06-28 14:43:34,083] Trial 96 finished with value: 2.30440092086792 and parameters: {'n_conv_layers': 4, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 7, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 5, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 7, 'kernel_size3': 5, 'maxpooling3': True, 'batchnormalization3': False, 'dropout': 0.23360308354690104, 'num_hidden_neurons0': 36, 'learnind': 3, 'batchind': 7, 'epochs': 251}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   45%|███▌    | 16:23:58/36:32:36 Convolutional Layers: 6
+ Dense Layers: 2
+ Learning rate: 0.0001
+ Batch Size: 256
+ Epochs: 67
+Epoch 27: early stopping
+[I 2024-06-28 15:16:08,111] Trial 99 finished with value: 0.8241076469421387 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 6, 'kernel_size1': 7, 'maxpooling1': False, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 5, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': False, 'batchnormalization4': False, 'filtersind5': 5, 'kernel_size5': 3, 'maxpooling5': True, 'batchnormalization5': True, 'dropout': 0.2581040429839155, 'num_hidden_neurons0': 61, 'learnind': 4, 'batchind': 8, 'epochs': 67}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   46%|███▋    | 16:56:32/36:32:36 Convolutional Layers: 8
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 512
+ Epochs: 74
+Epoch 14: early stopping
+[I 2024-06-28 15:24:59,003] Trial 102 finished with value: 0.8222058415412903 and parameters: {'n_conv_layers': 8, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 6, 'kernel_size1': 7, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 5, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 7, 'kernel_size3': 11, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': False, 'filtersind5': 5, 'kernel_size5': 11, 'maxpooling5': True, 'batchnormalization5': True, 'filtersind6': 5, 'kernel_size6': 7, 'batchnormalization6': True, 'filtersind7': 8, 'kernel_size7': 3, 'batchnormalization7': True, 'dropout': 0.3431581714570063, 'num_hidden_neurons0': 49, 'learnind': 3, 'batchind': 9, 'epochs': 74}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   47%|███▋    | 17:05:23/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 256
+ Epochs: 50
+Epoch 14: early stopping
+[I 2024-06-28 15:33:01,473] Trial 104 finished with value: 0.7629875540733337 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 7, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 7, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 5, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.24002897095941306, 'num_hidden_neurons0': 28, 'learnind': 3, 'batchind': 8, 'epochs': 50}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   47%|███▊    | 17:13:25/36:32:36 Convolutional Layers: 6
+ Dense Layers: 2
+ Learning rate: 0.01
+ Batch Size: 64
+ Epochs: 90
+Epoch 17: early stopping
+[I 2024-06-28 15:57:33,681] Trial 106 finished with value: 1.9046119451522827 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 11, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 7, 'kernel_size2': 3, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 7, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': False, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'filtersind5': 7, 'kernel_size5': 7, 'maxpooling5': False, 'batchnormalization5': True, 'dropout': 0.18420697892173504, 'num_hidden_neurons0': 39, 'learnind': 2, 'batchind': 6, 'epochs': 90}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   48%|███▊    | 17:37:57/36:32:36 Convolutional Layers: 6
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 32
+ Epochs: 164
+Epoch 19: early stopping
+[I 2024-06-28 16:11:03,206] Trial 107 finished with value: 0.7598903179168701 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 5, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 7, 'kernel_size3': 9, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 5, 'kernel_size4': 3, 'maxpooling4': True, 'batchnormalization4': False, 'filtersind5': 5, 'kernel_size5': 9, 'maxpooling5': True, 'batchnormalization5': False, 'dropout': 0.2800996295957935, 'num_hidden_neurons0': 77, 'learnind': 3, 'batchind': 5, 'epochs': 164}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   49%|███▉    | 17:51:27/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 128
+ Epochs: 59
+Epoch 18: early stopping
+[I 2024-06-28 16:23:57,571] Trial 109 finished with value: 0.6877895593643188 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 6, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': False, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 9, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.10168679757754068, 'num_hidden_neurons0': 42, 'learnind': 3, 'batchind': 7, 'epochs': 59}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   49%|███▉    | 18:04:21/36:32:36 Convolutional Layers: 7
+ Dense Layers: 3
+ Learning rate: 0.0001
+ Batch Size: 16
+ Epochs: 14
+[I 2024-06-28 16:52:50,597] Trial 111 finished with value: 0.994150698184967 and parameters: {'n_conv_layers': 7, 'n_dense_layers': 3, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 9, 'maxpooling1': True, 'batchnormalization1': False, 'filtersind2': 6, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': False, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 9, 'maxpooling4': False, 'batchnormalization4': True, 'filtersind5': 6, 'kernel_size5': 9, 'maxpooling5': True, 'batchnormalization5': True, 'filtersind6': 8, 'kernel_size6': 5, 'maxpooling6': True, 'batchnormalization6': False, 'dropout': 0.4341685938247125, 'num_hidden_neurons0': 44, 'num_hidden_neurons1': 8, 'learnind': 4, 'batchind': 4, 'epochs': 14}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   51%|████    | 18:33:14/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 128
+ Epochs: 53
+Epoch 17: early stopping
+[I 2024-06-28 17:04:46,698] Trial 112 finished with value: 0.7385088801383972 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 6, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': False, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 9, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.06864692404678968, 'num_hidden_neurons0': 52, 'learnind': 3, 'batchind': 7, 'epochs': 53}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   51%|████    | 18:45:10/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 128
+ Epochs: 61
+Epoch 21: early stopping
+[I 2024-06-28 17:21:22,668] Trial 113 finished with value: 0.7501022815704346 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 6, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': False, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 9, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.05124823773659874, 'num_hidden_neurons0': 52, 'learnind': 3, 'batchind': 7, 'epochs': 61}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   52%|████▏   | 19:01:46/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 128
+ Epochs: 43
+Epoch 28: early stopping
+[I 2024-06-28 17:44:22,519] Trial 115 finished with value: 0.7970287203788757 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 6, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': False, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 9, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.07166353356604988, 'num_hidden_neurons0': 35, 'learnind': 3, 'batchind': 7, 'epochs': 43}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   53%|████▏   | 19:24:46/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 1024
+ Epochs: 35
+Epoch 6: early stopping
+[I 2024-06-28 17:48:29,661] Trial 117 finished with value: 4.4307732582092285 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 6, 'kernel_size2': 3, 'maxpooling2': False, 'batchnormalization2': True, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': False, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 9, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.3335249943762739, 'num_hidden_neurons0': 58, 'learnind': 3, 'batchind': 10, 'epochs': 35}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   53%|████▎   | 19:28:53/36:32:36 Convolutional Layers: 6
+ Dense Layers: 1
+ Learning rate: 0.01
+ Batch Size: 64
+ Epochs: 145
+Epoch 20: early stopping
+[I 2024-06-28 18:32:46,443] Trial 119 finished with value: 1.181007981300354 and parameters: {'n_conv_layers': 6, 'n_dense_layers': 1, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 7, 'maxpooling1': False, 'batchnormalization1': True, 'filtersind2': 6, 'kernel_size2': 7, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 3, 'maxpooling3': False, 'batchnormalization3': True, 'filtersind4': 8, 'kernel_size4': 3, 'maxpooling4': False, 'batchnormalization4': False, 'filtersind5': 5, 'kernel_size5': 3, 'maxpooling5': False, 'batchnormalization5': True, 'dropout': 0.01568617822917401, 'learnind': 2, 'batchind': 6, 'epochs': 145}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   55%|████▍   | 20:13:10/36:32:36 Convolutional Layers: 4
+ Dense Layers: 2
+ Learning rate: 0.0001
+ Batch Size: 128
+ Epochs: 83
+Epoch 17: early stopping
+[I 2024-06-28 18:36:57,860] Trial 121 finished with value: 0.7341814637184143 and parameters: {'n_conv_layers': 4, 'n_dense_layers': 2, 'maxpooling0': True, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 5, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': False, 'batchnormalization3': True, 'dropout': 0.3696379112668471, 'num_hidden_neurons0': 25, 'learnind': 4, 'batchind': 7, 'epochs': 83}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   56%|████▍   | 20:17:22/36:32:36 Convolutional Layers: 4
+ Dense Layers: 2
+ Learning rate: 0.0001
+ Batch Size: 128
+ Epochs: 82
+Epoch 19: early stopping
+[I 2024-06-28 18:40:54,852] Trial 122 finished with value: 0.79537433385849 and parameters: {'n_conv_layers': 4, 'n_dense_layers': 2, 'maxpooling0': True, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 5, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': False, 'batchnormalization3': True, 'dropout': 0.34952116387655274, 'num_hidden_neurons0': 27, 'learnind': 4, 'batchind': 7, 'epochs': 82}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   56%|████▍   | 20:21:19/36:32:36 Convolutional Layers: 4
+ Dense Layers: 2
+ Learning rate: 0.0001
+ Batch Size: 128
+ Epochs: 69
+Epoch 19: early stopping
+[I 2024-06-28 18:44:51,872] Trial 124 finished with value: 0.7430934309959412 and parameters: {'n_conv_layers': 4, 'n_dense_layers': 2, 'maxpooling0': True, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 5, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': False, 'batchnormalization3': True, 'dropout': 0.39498484805322953, 'num_hidden_neurons0': 25, 'learnind': 4, 'batchind': 7, 'epochs': 69}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   56%|████▍   | 20:25:16/36:32:36 Convolutional Layers: 3
+ Dense Layers: 2
+ Learning rate: 0.0001
+ Batch Size: 128
+ Epochs: 94
+Epoch 14: early stopping
+[I 2024-06-28 18:47:32,258] Trial 126 finished with value: 0.8066596388816833 and parameters: {'n_conv_layers': 3, 'n_dense_layers': 2, 'maxpooling0': True, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 5, 'maxpooling2': False, 'batchnormalization2': False, 'dropout': 0.07931597838455277, 'num_hidden_neurons0': 41, 'learnind': 4, 'batchind': 7, 'epochs': 94}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   56%|████▍   | 20:27:56/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 25
+Epoch 12: early stopping
+[I 2024-06-28 19:19:56,395] Trial 128 finished with value: 0.824978232383728 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 9, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': True, 'batchnormalization2': False, 'filtersind3': 8, 'kernel_size3': 5, 'maxpooling3': False, 'batchnormalization3': True, 'filtersind4': 6, 'kernel_size4': 5, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.21080868168351358, 'num_hidden_neurons0': 68, 'learnind': 3, 'batchind': 4, 'epochs': 25}. Best is trial 97 with value: 0.6515436768531799.
+Best trial: 97. Best value: 0.651544:   57%|████▌   | 21:00:20/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 256
+ Epochs: 184
+Epoch 17: early stopping
+[I 2024-06-28 19:43:24,350] Trial 130 finished with value: 0.9979760646820068 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 11, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.05815023582108434, 'num_hidden_neurons0': 48, 'learnind': 3, 'batchind': 8, 'epochs': 184}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   59%|████   | 21:23:48/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 36
+Epoch 31: early stopping
+[I 2024-06-28 20:43:00,426] Trial 132 finished with value: 0.7021448016166687 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': True, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.14286868495200156, 'num_hidden_neurons0': 15, 'learnind': 3, 'batchind': 4, 'epochs': 36}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   61%|████▎  | 22:23:24/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 31
+Epoch 18: early stopping
+[I 2024-06-28 21:16:57,219] Trial 135 finished with value: 0.6797931790351868 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 5, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.1334750071876739, 'num_hidden_neurons0': 54, 'learnind': 3, 'batchind': 4, 'epochs': 31}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   63%|████▍  | 22:57:21/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 15
+[I 2024-06-28 21:46:51,447] Trial 137 finished with value: 0.8293383717536926 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 3, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.12404955649563285, 'num_hidden_neurons0': 16, 'learnind': 3, 'batchind': 4, 'epochs': 15}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   64%|████▍  | 23:27:15/36:32:36 Convolutional Layers: 1
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 29
+Epoch 8: early stopping
+[I 2024-06-28 21:48:03,894] Trial 138 finished with value: 1.3601688146591187 and parameters: {'n_conv_layers': 1, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'dropout': 0.1380892108061164, 'num_hidden_neurons0': 60, 'learnind': 3, 'batchind': 4, 'epochs': 29}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   64%|████▍  | 23:28:28/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 23
+Epoch 18: early stopping
+[I 2024-06-28 22:27:17,847] Trial 141 finished with value: 0.7508875727653503 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.16030731983074092, 'num_hidden_neurons0': 45, 'learnind': 3, 'batchind': 4, 'epochs': 23}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   66%|████▌  | 24:07:42/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 20
+Epoch 19: early stopping
+[I 2024-06-28 23:09:03,126] Trial 143 finished with value: 0.7809020280838013 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.12889136402601542, 'num_hidden_neurons0': 65, 'learnind': 3, 'batchind': 4, 'epochs': 20}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   68%|████▊  | 24:49:27/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 10
+[I 2024-06-28 23:30:54,599] Trial 144 finished with value: 0.6847929954528809 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.17071136827509203, 'num_hidden_neurons0': 47, 'learnind': 3, 'batchind': 4, 'epochs': 10}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   69%|████▊  | 25:11:18/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 10
+[I 2024-06-28 23:40:49,754] Trial 146 finished with value: 0.6866059303283691 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 5, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.18155213841705903, 'num_hidden_neurons0': 54, 'learnind': 3, 'batchind': 4, 'epochs': 10}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   69%|████▊  | 25:21:13/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 12
+[I 2024-06-28 23:52:29,074] Trial 147 finished with value: 0.7826067209243774 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 5, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.1752141607765192, 'num_hidden_neurons0': 56, 'learnind': 3, 'batchind': 4, 'epochs': 12}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   70%|████▉  | 25:32:53/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 18
+[I 2024-06-29 00:09:39,715] Trial 149 finished with value: 0.6822481751441956 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 5, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.10518120427160177, 'num_hidden_neurons0': 50, 'learnind': 3, 'batchind': 4, 'epochs': 18}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   71%|████▉  | 25:50:03/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 17
+Epoch 12: early stopping
+[I 2024-06-29 00:35:07,277] Trial 151 finished with value: 2.327549457550049 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 5, 'kernel_size1': 5, 'maxpooling1': False, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': False, 'dropout': 0.10486476758991442, 'num_hidden_neurons0': 108, 'learnind': 3, 'batchind': 4, 'epochs': 17}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   72%|█████  | 26:15:31/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 29
+Epoch 17: early stopping
+[I 2024-06-29 00:50:14,664] Trial 154 finished with value: 0.7167026996612549 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 5, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.1255859077927951, 'num_hidden_neurons0': 49, 'learnind': 3, 'batchind': 4, 'epochs': 29}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   73%|█████  | 26:30:38/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 25
+Epoch 13: early stopping
+[I 2024-06-29 01:01:52,215] Trial 156 finished with value: 0.7091975212097168 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 5, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.1489131494163024, 'num_hidden_neurons0': 67, 'learnind': 3, 'batchind': 4, 'epochs': 25}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   73%|█████  | 26:42:16/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 30
+Epoch 16: early stopping
+[I 2024-06-29 01:16:02,492] Trial 157 finished with value: 0.7818291783332825 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 5, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.1681810704493277, 'num_hidden_neurons0': 41, 'learnind': 3, 'batchind': 4, 'epochs': 30}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   74%|█████▏ | 26:56:26/36:32:36 Convolutional Layers: 5
+ Dense Layers: 1
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 21
+Epoch 11: early stopping
+[I 2024-06-29 01:25:52,989] Trial 160 finished with value: 0.8548936247825623 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 1, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 5, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': False, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.18972242022127075, 'learnind': 3, 'batchind': 4, 'epochs': 21}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   74%|█████▏ | 27:06:17/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.1
+ Batch Size: 16
+ Epochs: 15
+Epoch 14: early stopping
+[I 2024-06-29 01:56:08,087] Trial 162 finished with value: 3.4284913539886475 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.11367303510804495, 'num_hidden_neurons0': 58, 'learnind': 1, 'batchind': 4, 'epochs': 15}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   76%|█████▎ | 27:36:32/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 35
+Epoch 18: early stopping
+[I 2024-06-29 02:35:25,232] Trial 164 finished with value: 0.6779605150222778 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.1201160283165931, 'num_hidden_neurons0': 46, 'learnind': 3, 'batchind': 4, 'epochs': 35}. Best is trial 129 with value: 0.6421743631362915.
+Best trial: 129. Best value: 0.642174:   77%|█████▍ | 28:15:49/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 25
+Epoch 22: early stopping
+[I 2024-06-29 03:23:23,190] Trial 166 finished with value: 0.6777330040931702 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.12561878752635441, 'num_hidden_neurons0': 54, 'learnind': 3, 'batchind': 4, 'epochs': 25}. Best is trial 165 with value: 0.6353049874305725.
+Best trial: 165. Best value: 0.635305:   80%|█████▌ | 29:03:47/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 39
+Epoch 17: early stopping
+[I 2024-06-29 04:00:26,411] Trial 168 finished with value: 0.7172949910163879 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.12798983208053938, 'num_hidden_neurons0': 52, 'learnind': 3, 'batchind': 4, 'epochs': 39}. Best is trial 165 with value: 0.6353049874305725.
+Best trial: 165. Best value: 0.635305:   81%|█████▋ | 29:40:50/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 25
+[I 2024-06-29 04:54:46,927] Trial 169 finished with value: 0.6877244114875793 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.4692089112011496, 'num_hidden_neurons0': 53, 'learnind': 3, 'batchind': 4, 'epochs': 25}. Best is trial 165 with value: 0.6353049874305725.
+Best trial: 165. Best value: 0.635305:   84%|█████▊ | 30:35:11/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 26
+Epoch 20: early stopping
+[I 2024-06-29 05:38:20,953] Trial 172 finished with value: 0.7265202403068542 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.10997917383049965, 'num_hidden_neurons0': 51, 'learnind': 3, 'batchind': 4, 'epochs': 26}. Best is trial 165 with value: 0.6353049874305725.
+Best trial: 165. Best value: 0.635305:   86%|█████▉ | 31:18:45/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 10
+[I 2024-06-29 06:00:08,133] Trial 174 finished with value: 0.844003438949585 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.4593001234144315, 'num_hidden_neurons0': 55, 'learnind': 3, 'batchind': 4, 'epochs': 10}. Best is trial 165 with value: 0.6353049874305725.
+Best trial: 165. Best value: 0.635305:   87%|██████ | 31:40:32/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 33
+Epoch 20: early stopping
+[I 2024-06-29 06:43:45,074] Trial 176 finished with value: 0.7215218544006348 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.4776092074596941, 'num_hidden_neurons0': 72, 'learnind': 3, 'batchind': 4, 'epochs': 33}. Best is trial 165 with value: 0.6353049874305725.
+Best trial: 165. Best value: 0.635305:   89%|██████▏| 32:24:09/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 18
+[I 2024-06-29 07:22:53,122] Trial 178 finished with value: 0.6510177850723267 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.13948183319925594, 'num_hidden_neurons0': 46, 'learnind': 3, 'batchind': 4, 'epochs': 18}. Best is trial 165 with value: 0.6353049874305725.
+Best trial: 165. Best value: 0.635305:   90%|██████▎| 33:03:17/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 18
+[I 2024-06-29 08:02:05,284] Trial 180 finished with value: 0.8213736414909363 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.13886048709532403, 'num_hidden_neurons0': 46, 'learnind': 3, 'batchind': 4, 'epochs': 18}. Best is trial 165 with value: 0.6353049874305725.
+Best trial: 165. Best value: 0.635305:   92%|██████▍| 33:42:29/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 21
+Epoch 17: early stopping
+[I 2024-06-29 08:39:08,159] Trial 182 finished with value: 0.6617538928985596 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.15097354669759197, 'num_hidden_neurons0': 49, 'learnind': 3, 'batchind': 4, 'epochs': 21}. Best is trial 165 with value: 0.6353049874305725.
+Best trial: 165. Best value: 0.635305:   94%|██████▌| 34:19:32/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 21
+[I 2024-06-29 09:24:51,287] Trial 184 finished with value: 0.6918637752532959 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.1710861498263725, 'num_hidden_neurons0': 46, 'learnind': 3, 'batchind': 4, 'epochs': 21}. Best is trial 165 with value: 0.6353049874305725.
+Best trial: 165. Best value: 0.635305:   96%|██████▋| 35:05:15/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 22
+[I 2024-06-29 10:12:40,406] Trial 186 finished with value: 0.8068492412567139 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': True, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.4972155245953279, 'num_hidden_neurons0': 37, 'learnind': 3, 'batchind': 4, 'epochs': 22}. Best is trial 165 with value: 0.6353049874305725.
+Best trial: 165. Best value: 0.635305:   98%|██████▊| 35:53:04/36:32:36 Convolutional Layers: 5
+ Dense Layers: 2
+ Learning rate: 0.001
+ Batch Size: 16
+ Epochs: 15
+[I 2024-06-29 11:32:20,700] Trial 188 finished with value: 1.0050479173660278 and parameters: {'n_conv_layers': 5, 'n_dense_layers': 2, 'maxpooling0': False, 'batchnormalization0': False, 'filtersind1': 8, 'kernel_size1': 5, 'maxpooling1': False, 'batchnormalization1': True, 'filtersind2': 8, 'kernel_size2': 9, 'maxpooling2': False, 'batchnormalization2': False, 'filtersind3': 6, 'kernel_size3': 7, 'maxpooling3': True, 'batchnormalization3': True, 'filtersind4': 7, 'kernel_size4': 7, 'maxpooling4': True, 'batchnormalization4': True, 'dropout': 0.15226743695902875, 'num_hidden_neurons0': 43, 'learnind': 3, 'batchind': 4, 'epochs': 15}. Best is trial 165 with value: 0.6353049874305725.
+Best trial: 165. Best value: 0.635305:  100%|███████| 37:12:44/36:32:36
+Number of finished trials: 190
+Best trial:
+  Value: 0.6353049874305725
+  Params:
+    n_conv_layers: 5
+    n_dense_layers: 2
+    maxpooling0: False
+    batchnormalization0: False
+    filtersind1: 8
+    kernel_size1: 5
+    maxpooling1: True
+    batchnormalization1: True
+    filtersind2: 8
+    kernel_size2: 9
+    maxpooling2: False
+    batchnormalization2: False
+    filtersind3: 6
+    kernel_size3: 7
+    maxpooling3: True
+    batchnormalization3: True
+    filtersind4: 7
+    kernel_size4: 7
+    maxpooling4: True
+    batchnormalization4: True
+    dropout: 0.4738373728206417
+    num_hidden_neurons0: 54
+    learnind: 3
+    batchind: 4
+    epochs: 24
+
+(optuna) D:\Users\SuperUser\OneDrive\mestrado\pesquisa\optuna\cifar-10> 

@@ -1,0 +1,7 @@
+"",".ID.","camadasConvolucionais","maxpooling1","batchNormalization1","camadasDensas","dropout","learningIndex","batchIndex","numEpocas","maxpooling2","maxpooling3","maxpooling4","maxpooling5","maxpooling6","maxpooling7","maxpooling8","batchNormalization2","batchNormalization3","batchNormalization4","batchNormalization5","batchNormalization6","batchNormalization7","batchNormalization8","numFiltrosInd2","numFiltrosInd3","numFiltrosInd4","numFiltrosInd5","numFiltrosInd6","numFiltrosInd7","numFiltrosInd8","tamanhoFiltros2","tamanhoFiltros3","tamanhoFiltros4","tamanhoFiltros5","tamanhoFiltros6","tamanhoFiltros7","tamanhoFiltros8","neuroniosDensos1","neuroniosDensos2",".PARENT."
+"6",6,2,1,1,1,0.26488,4,9,109,0,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"37",37,2,1,1,1,0.41471,5,7,155,0,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,NA,NA,NA,3,NA,NA,NA,NA,NA,NA,NA,NA,6
+"45",45,3,0,1,1,0.40907,2,9,84,1,1,NA,NA,NA,NA,NA,0,1,NA,NA,NA,NA,NA,6,5,NA,NA,NA,NA,NA,5,9,NA,NA,NA,NA,NA,NA,NA,31
+"54",54,3,1,1,1,0.49267,2,10,148,0,1,NA,NA,NA,NA,NA,0,1,NA,NA,NA,NA,NA,8,7,NA,NA,NA,NA,NA,5,7,NA,NA,NA,NA,NA,NA,NA,31
+"81",81,4,0,1,1,0.32162,3,4,117,1,1,0,NA,NA,NA,NA,0,1,0,NA,NA,NA,NA,6,5,5,NA,NA,NA,NA,5,9,5,NA,NA,NA,NA,NA,NA,45
+"86",86,2,1,1,1,0.39372,5,6,162,1,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,NA,NA,NA,NA,NA,6

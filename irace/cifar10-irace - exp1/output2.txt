@@ -1,0 +1,205 @@
+
+(irace) D:\Users\SuperUser\OneDrive\mestrado\pesquisa\irace\cifar10-irace - exp2\irace>irace --target-runner target-runner.bat -s scenario.txt -p parameters.txt
+#------------------------------------------------------------------------------
+# irace: An implementation in R of (Elitist) Iterated Racing
+# Version: 3.3.2238:2239
+# Copyright (C) 2010-2019
+# Manuel Lopez-Ibanez     <manuel.lopez-ibanez@manchester.ac.uk>
+# Jeremie Dubois-Lacoste
+# Leslie Perez Caceres    <leslie.perez.caceres@ulb.ac.be>
+#
+# This is free software, and you are welcome to redistribute it under certain
+# conditions.  See the GNU General Public License for details. There is NO
+# WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# irace builds upon previous code from the race package:
+#     race: Racing methods for the selection of the best
+#     Copyright (C) 2003 Mauro Birattari
+#------------------------------------------------------------------------------
+# installed at: D:/Users/SuperUser/anaconda3/envs/irace/Lib/R/library/irace
+# called with: --target-runner target-runner.bat -s scenario.txt -p parameters.txt
+# 10 expression(s) specifying forbidden configurations read from 'D:/Users/SuperUser/OneDrive/mestrado/pesquisa/irace/cifar10-irace - exp2/irace/forbidden.txt'
+# 2024-06-21 12:50:21 -03: Estimating execution time using 2% of 61599 = 1232
+# 2024-06-21 13:19:39 -03: Estimated execution time is 452.304645717144 based on 2 configurations and 2 instances. Used time: 1809.21858286858
+# 2024-06-21 13:19:39 -03: Warning: with the current settings and estimated time per run (452.304645717144) irace will not have enough budget to execute the minimum number of iterations (7).  Execution will continue by assuming that the estimated time is too high and reducing the minimum number of iterations, however, if the estimation was correct or too low, results might not be better than random sampling.
+# 2024-06-21 13:19:39 -03: Warning: with the current settings and estimated time per run (452.304645717144) irace will not have enough budget to execute the minimum number of iterations (6).  Execution will continue by assuming that the estimated time is too high and reducing the minimum number of iterations, however, if the estimation was correct or too low, results might not be better than random sampling.
+# 2024-06-21 13:19:39 -03: Warning: with the current settings and estimated time per run (452.304645717144) irace will not have enough budget to execute the minimum number of iterations (5).  Execution will continue by assuming that the estimated time is too high and reducing the minimum number of iterations, however, if the estimation was correct or too low, results might not be better than random sampling.
+# 2024-06-21 13:19:39 -03: Warning: with the current settings and estimated time per run (452.304645717144) irace will not have enough budget to execute the minimum number of iterations (4).  Execution will continue by assuming that the estimated time is too high and reducing the minimum number of iterations, however, if the estimation was correct or too low, results might not be better than random sampling.
+# 2024-06-21 13:19:39 -03: Warning: with the current settings and estimated time per run (452.304645717144) irace will not have enough budget to execute the minimum number of iterations (3).  Execution will continue by assuming that the estimated time is too high and reducing the minimum number of iterations, however, if the estimation was correct or too low, results might not be better than random sampling.
+# 2024-06-21 13:19:39 -03: Initialization
+# Elitist race
+# Elitist new instances: 1
+# Elitist limit: 2
+# nbIterations: 2
+# minNbSurvival: 7
+# nbParameters: 38
+# seed: 2099834182
+# confidence level: 0.95
+# budget: 132
+# time budget: 59789.7814171314
+# mu: 5
+# deterministic: FALSE
+
+# 2024-06-21 13:19:39 -03: Iteration 1 of 2
+# experimentsUsedSoFar: 4
+# timeUsed: 1809.21858286858
+# boundEstimate: 452.304645717144
+# remainingBudget: 132
+# currentBudget: 66
+# nbConfigurations: 11
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          2|         11|          1|   0.7760310769|          9|00:17:51|   NA|  NA|    NA|
+|-|          1|          1|          1|   0.7699816823|         18|00:17:36|   NA|  NA|    NA|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:           1    mean value:    0.7699816823
+Description of the best-so-far configuration:
+  .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+1    1                     2           1                   1             2    0.24             5          5       187           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA
+   NA                  NA                  NA              5             NA             NA             NA             NA             NA
+NA               7              NA              NA              NA              NA              NA              NA               68               NA       NA
+
+# 2024-06-21 13:55:08 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+  camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+1                     2           1                   1             2    0.24             5          5       187           1          NA          NA
+          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              5             NA             NA             NA             NA             NA             NA               7              NA              NA              NA              NA              NA              NA               68               NA
+# 2024-06-21 13:55:08 -03: Iteration 2 of 2
+# experimentsUsedSoFar: 22
+# timeUsed: 5295.98249745369
+# boundEstimate: 240.726477156986
+# remainingBudget: 234
+# currentBudget: 234
+# nbConfigurations: 33
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          3|         33|         25|   0.7500368953|         33|01:46:47|   NA|  NA|    NA|
+|-|          2|          4|         25|   0.7631351352|         65|01:35:35|-0.80|0.10|1.3277|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:           1    mean value:    0.7656163573
+Description of the best-so-far configuration:
+  .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+1    1                     2           1                   1             2    0.24             5          5       187           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA
+   NA                  NA                  NA              5             NA             NA             NA             NA             NA
+NA               7              NA              NA              NA              NA              NA              NA               68               NA       NA
+
+# 2024-06-21 17:17:31 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+1                      2           1                   1             2    0.24             5          5       187           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              5             NA             NA             NA             NA             NA             NA               7              NA              NA              NA              NA              NA              NA               68               NA
+25                     2           1                   1             2    0.38             4          5       101           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              7             NA             NA             NA             NA             NA             NA               9              NA              NA              NA              NA              NA              NA               40               NA
+32                     4           1                   0             2    0.34             4          9       150           1           1
+0          NA          NA          NA          NA                   0                   0                   0                  NA                  NA                  NA                  NA              7              6              7             NA             NA             NA             NA               9               7              11              NA              NA              NA              NA              100               NA
+39                     2           1                   1             1    0.34             4          6       207           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              5             NA             NA             NA             NA             NA             NA               9              NA              NA              NA              NA              NA              NA               NA               NA
+# 2024-06-21 17:17:31 -03: Iteration 3 of 3
+# experimentsUsedSoFar: 87
+# timeUsed: 26897.705799818
+# boundEstimate: 309.169032181817
+# remainingBudget: 112
+# currentBudget: 112
+# nbConfigurations: 15
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          4|         15|         51|   0.6667299271|         15|01:04:36|   NA|  NA|    NA|
+|-|          1|          5|         51|   0.6717665792|         29|00:49:31|+1.00|1.00|0.0796|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          25    mean value:    0.7578376830
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+25   25                     2           1                   1             2    0.38             4          5       101           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA
+    NA                  NA                  NA              7             NA             NA             NA             NA             NA
+ NA               9              NA              NA              NA              NA              NA              NA               40               NA        1
+
+# 2024-06-21 19:11:40 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+25                     2           1                   1             2    0.38             4          5       101           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              7             NA             NA             NA             NA             NA             NA               9              NA              NA              NA              NA              NA              NA               40               NA
+1                      2           1                   1             2    0.24             5          5       187           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              5             NA             NA             NA             NA             NA             NA               7              NA              NA              NA              NA              NA              NA               68               NA
+39                     2           1                   1             1    0.34             4          6       207           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              5             NA             NA             NA             NA             NA             NA               9              NA              NA              NA              NA              NA              NA               NA               NA
+32                     4           1                   0             2    0.34             4          9       150           1           1
+0          NA          NA          NA          NA                   0                   0                   0                  NA                  NA                  NA                  NA              7              6              7             NA             NA             NA             NA               9               7              11              NA              NA              NA              NA              100               NA
+51                     2           1                   1             2    0.44             5          4       227           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              7             NA             NA             NA             NA             NA             NA               7              NA              NA              NA              NA              NA              NA               26               NA
+# 2024-06-21 19:11:40 -03: Iteration 4 of 4
+# experimentsUsedSoFar: 116
+# timeUsed: 37649.0074207783
+# boundEstimate: 324.560408799813
+# remainingBudget: 74
+# currentBudget: 74
+# nbConfigurations: 10
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          5|         10|         51|   0.6598660946|         10|01:01:59|   NA|  NA|    NA|
+|=|          2|         10|         51|   0.6590723097|         16|00:38:46|+0.87|0.93|0.0219|
+|-|          1|          5|         51|   0.6649826169|         21|00:25:53|+0.53|0.69|0.1019|
+|.|          4|          5|         51|   0.6654194444|         21|00:00:00|+0.65|0.74|0.0779|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          25    mean value:    0.7529653311
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+25   25                     2           1                   1             2    0.38             4          5       101           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA
+    NA                  NA                  NA              7             NA             NA             NA             NA             NA
+ NA               9              NA              NA              NA              NA              NA              NA               40               NA        1
+
+# 2024-06-21 21:18:20 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+25                     2           1                   1             2    0.38             4          5       101           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              7             NA             NA             NA             NA             NA             NA               9              NA              NA              NA              NA              NA              NA               40               NA
+1                      2           1                   1             2    0.24             5          5       187           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              5             NA             NA             NA             NA             NA             NA               7              NA              NA              NA              NA              NA              NA               68               NA
+39                     2           1                   1             1    0.34             4          6       207           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              5             NA             NA             NA             NA             NA             NA               9              NA              NA              NA              NA              NA              NA               NA               NA
+32                     4           1                   0             2    0.34             4          9       150           1           1
+0          NA          NA          NA          NA                   0                   0                   0                  NA                  NA                  NA                  NA              7              6              7             NA             NA             NA             NA               9               7              11              NA              NA              NA              NA              100               NA
+51                     2           1                   1             2    0.44             5          4       227           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              7             NA             NA             NA             NA             NA             NA               7              NA              NA              NA              NA              NA              NA               26               NA
+# 2024-06-21 21:18:20 -03: Stopped because there is not enough budget left to race more than the minimum (7)
+# You may either increase the budget or set 'minNbSurvival' to a lower value
+# Iteration: 5
+# nbIterations: 5
+# experimentsUsedSoFar: 137
+# timeUsed: 49803.73
+# remainingBudget: 32
+# currentBudget: 32
+# number of elites: 5
+# nbConfigurations: 5
+# Best configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+25                     2           1                   1             2    0.38             4          5       101           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              7             NA             NA             NA             NA             NA             NA               9              NA              NA              NA              NA              NA              NA               40               NA
+1                      2           1                   1             2    0.24             5          5       187           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              5             NA             NA             NA             NA             NA             NA               7              NA              NA              NA              NA              NA              NA               68               NA
+39                     2           1                   1             1    0.34             4          6       207           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              5             NA             NA             NA             NA             NA             NA               9              NA              NA              NA              NA              NA              NA               NA               NA
+32                     4           1                   0             2    0.34             4          9       150           1           1
+0          NA          NA          NA          NA                   0                   0                   0                  NA                  NA                  NA                  NA              7              6              7             NA             NA             NA             NA               9               7              11              NA              NA              NA              NA              100               NA
+51                     2           1                   1             2    0.44             5          4       227           1          NA          NA          NA          NA          NA          NA                   0                  NA                  NA                  NA                  NA                  NA                  NA              7             NA             NA             NA             NA             NA             NA               7              NA              NA              NA              NA              NA              NA               26               NA
+# Best configurations as commandlines (first number is the configuration ID; same order as above):
+25  --nc=2 --mp1=1 --mp2=1 --bn1=1 --bn2=0 --nf2=7 --tf2=9 --nd=2 --nd1=40 --dr=0.38 --li=4 --bti=5 --ne=101
+1   --nc=2 --mp1=1 --mp2=1 --bn1=1 --bn2=0 --nf2=5 --tf2=7 --nd=2 --nd1=68 --dr=0.24 --li=5 --bti=5 --ne=187
+39  --nc=2 --mp1=1 --mp2=1 --bn1=1 --bn2=0 --nf2=5 --tf2=9 --nd=1 --dr=0.34 --li=4 --bti=6 --ne=207
+32  --nc=4 --mp1=1 --mp2=1 --mp3=1 --mp4=0 --bn1=0 --bn2=0 --bn3=0 --bn4=0 --nf2=7 --nf3=6 --nf4=7 --tf2=9 --tf3=7 --tf4=11 --nd=2 --nd1=100 --dr=0.34 --li=4 --bti=9 --ne=150
+51  --nc=2 --mp1=1 --mp2=1 --bn1=1 --bn2=0 --nf2=7 --tf2=7 --nd=2 --nd1=26 --dr=0.44 --li=5 --bti=4 --ne=227
+
+(irace) D:\Users\SuperUser\OneDrive\mestrado\pesquisa\irace\cifar10-irace - exp2\irace>
