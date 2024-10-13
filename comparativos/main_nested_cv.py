@@ -105,7 +105,7 @@ def evaluate_model(epochs, batch_size, learning_rate,
 
 #Loading Dataset
 n_classes = 10
-num_folds = 5
+num_folds = 6
 
 (x_train, y_train), (x_valid, y_valid) = cifar10.load_data()
 
@@ -168,12 +168,20 @@ if __name__ == '__main__':
 
        v_fold_no = 1
        for all_train, validation in kfold.split(inputs, targets):
+          allt_inputs = inputs[all_train]
+          allt_targets = targets[all_train]
+          validation_inputs = inputs[validation]
+          validation_targets = targets[validation]
           t_fold_no=1
-          for train, test in ifold.split(inputs[all_train], targets[all_train]):
+          for train, test in ifold.split(allt_inputs, allt_targets):
+            training_inputs = allt_inputs[train]
+            training_targets = allt_targets[train]
+            testing_inputs = allt_inputs[test]
+            testing_targets = allt_targets[test]
           
             output, total_time = evaluate_model(int(linha["numEpocas"]),batchsize,learnrate, 
                                                 convLayers, maxPooling, batchNorm, numFilters, sizeFilters, denseLayers, denseNeurons, linha["dropout"],
-                                                inputs[train], targets[train], inputs[test], targets[test], inputs[validation], targets[validation])
+                                                training_inputs, training_targets, testing_inputs, testing_targets, validation_inputs, validation_targets)
             df_aux = pd.DataFrame({
                'ID': [linha['ID']], 
                'testfold': t_fold_no,
@@ -185,10 +193,13 @@ if __name__ == '__main__':
                })
             print(df_aux)
             history = pd.concat([history, df_aux], ignore_index=True)
+            # aumenta test fold number
             t_fold_no = t_fold_no + 1
-          # Increase fold number
+            print(history)
+          #salva intermediários
+          history.to_csv(exp_name,[linha['ID']],v_fold_no,"_nested_vfold.csv")
+          # aumenta validation fold number
           v_fold_no = v_fold_no + 1
-
     print(history)
     history.to_csv(exp_name+"_nested.csv")
 	
