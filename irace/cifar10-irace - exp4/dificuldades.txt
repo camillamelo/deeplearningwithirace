@@ -1,0 +1,6 @@
+Principais dificuldades:
+- tensorflow -> python em vez de python3
+
+Taxa de aprendizado:
+- Real entre 0 e 1 estava sempre ficando na ordem de grandeza de 0,5.
+- Substituí por inteiro entre 0 e 5, e calculo a taxa como 10 ^ (- valor)

@@ -1,0 +1,66 @@
+## Template for parameter description file for Iterated Race.
+##
+## The format is one parameter per line. Each line contains:
+##
+## 1: Name of the parameter. An unquoted alphanumeric string,
+##    example: ants
+
+## 2: Switch to pass the parameter. A quoted (possibly empty) string, 
+##    if the value and the switch must be separated, add a space at
+##    the end of the string. Example : "--version1 --ants "
+
+## 3: Type. An unquoted single letter, among 
+##     i: Integer, c: categorical, o: ordinal, r: real.
+
+## 4: For c and o: All possible values, that is, a variable number of
+##    quoted or unquoted strings separated by commas within
+##    parenthesis. Empty strings and strings containing commas or
+##    spaces must be quoted.
+##    For i,r: a pair of unquoted numbers representing minimum and
+##    maximum values. 
+
+## 5: A conditional parameter can be defined according to the values of
+##    one or several other parameters.  This is done by adding a
+##    character '|' followed by an R expression involving the names of
+##    other parameters. This expression must return TRUE if the 
+##    condition is satisfied, FALSE otherwise.
+
+# 1:                    2:          3: 4:                	5:
+camadasConvolucionais	"--nc="	    i  (1, 8)
+maxpooling1		"--mp1="    i  (0, 1)	
+maxpooling2		"--mp2="    i  (0, 1)	| camadasConvolucionais > 1
+maxpooling3		"--mp3="    i  (0, 1)	| camadasConvolucionais > 2
+maxpooling4		"--mp4="    i  (0, 1)	| camadasConvolucionais > 3
+maxpooling5		"--mp5="    i  (0, 1)	| camadasConvolucionais > 4
+maxpooling6		"--mp6="    i  (0, 1)	| camadasConvolucionais > 5
+maxpooling7		"--mp7="    i  (0, 1)	| camadasConvolucionais > 6
+maxpooling8		"--mp8="    i  (0, 1)	| camadasConvolucionais > 7
+batchNormalization1	"--bn1="    i  (0, 1)
+batchNormalization2	"--bn2="    i  (0, 1)	| camadasConvolucionais > 1
+batchNormalization3	"--bn3="    i  (0, 1)	| camadasConvolucionais > 2
+batchNormalization4	"--bn4="    i  (0, 1)	| camadasConvolucionais > 3
+batchNormalization5	"--bn5="    i  (0, 1)	| camadasConvolucionais > 4
+batchNormalization6	"--bn6="    i  (0, 1)	| camadasConvolucionais > 5
+batchNormalization7	"--bn7="    i  (0, 1)	| camadasConvolucionais > 6
+batchNormalization8	"--bn8="    i  (0, 1)	| camadasConvolucionais > 7
+numFiltrosInd2		"--nf2="    i  (5, 8)			| camadasConvolucionais > 1
+numFiltrosInd3		"--nf3="    i  (5, 8)			| camadasConvolucionais > 2
+numFiltrosInd4		"--nf4="    i  (5, 8)			| camadasConvolucionais > 3
+numFiltrosInd5		"--nf5="    i  (5, 8)			| camadasConvolucionais > 4
+numFiltrosInd6		"--nf6="    i  (5, 8)			| camadasConvolucionais > 5
+numFiltrosInd7		"--nf7="    i  (5, 8)			| camadasConvolucionais > 6
+numFiltrosInd8		"--nf8="    i  (5, 8)			| camadasConvolucionais > 7
+tamanhoFiltros2		"--tf2="    i  (3, 11)			| camadasConvolucionais > 1
+tamanhoFiltros3		"--tf3="    i  (3, 11)			| camadasConvolucionais > 2
+tamanhoFiltros4		"--tf4="    i  (3, 11)			| camadasConvolucionais > 3
+tamanhoFiltros5		"--tf5="    i  (3, 11)			| camadasConvolucionais > 4
+tamanhoFiltros6		"--tf6="    i  (3, 11)			| camadasConvolucionais > 5
+tamanhoFiltros7		"--tf7="    i  (3, 11)			| camadasConvolucionais > 6
+tamanhoFiltros8		"--tf8="    i  (3, 11)			| camadasConvolucionais > 7
+camadasDensas		"--nd="	    i  (1, 3)
+neuroniosDensos1	"--nd1="    i  (4, 128)			| camadasDensas > 1
+neuroniosDensos2	"--nd2="    i  (4, 128)			| camadasDensas > 2
+dropout                 "--dr="     r  (0.0, 0.5)
+learningIndex           "--li="     i  (0, 5)
+batchIndex              "--bti="    i  (4, 10)
+numEpocas		"--ne="     i  (10, 300)

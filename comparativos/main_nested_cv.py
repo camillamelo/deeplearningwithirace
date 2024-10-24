@@ -197,7 +197,8 @@ if __name__ == '__main__':
             t_fold_no = t_fold_no + 1
             print(history)
           #salva intermediários
-          history.to_csv(exp_name,[linha['ID']],v_fold_no,"_nested_vfold.csv")
+          validationfile = exp_name+"_"+linha['ID']+"_"+str(v_fold_no)+"_nested_vfold.csv"
+          history.to_csv(validationfile)
           # aumenta validation fold number
           v_fold_no = v_fold_no + 1
     print(history)

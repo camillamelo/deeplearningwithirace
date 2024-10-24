@@ -1,0 +1,1276 @@
+
+(irace-new) D:\Users\SuperUser\OneDrive\mestrado\pesquisa\irace\cifar10-irace - exp8 - acc\irace>irace --target-runner target-runner.bat -s scenario.txt -p parameters.txt
+Warning message:
+package 'irace' was built under R version 4.4.1
+#------------------------------------------------------------------------------
+# irace: An implementation in R of (Elitist) Iterated Racing
+# Version: 3.5.6863679
+# Copyright (C) 2010-2020
+# Manuel Lopez-Ibanez     <manuel.lopez-ibanez@manchester.ac.uk>
+# Jeremie Dubois-Lacoste
+# Leslie Perez Caceres    <leslie.perez.caceres@ulb.ac.be>
+#
+# This is free software, and you are welcome to redistribute it under certain
+# conditions.  See the GNU General Public License for details. There is NO
+# WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# irace builds upon previous code from the race package:
+#     race: Racing methods for the selection of the best
+#     Copyright (C) 2003 Mauro Birattari
+#------------------------------------------------------------------------------
+# installed at: D:/Users/SuperUser/anaconda3/envs/irace-new/Lib/R/library/irace
+# called with: --target-runner target-runner.bat -s scenario.txt -p parameters.txt
+# 2024-07-26 00:25:12 -03: 10 expression(s) specifying forbidden configurations read from 'D:/Users/SuperUser/OneDrive/mestrado/pesquisa/irace/cifar10-irace - exp8 - acc/irace/forbidden.txt'
+Erro: == irace == Insufficient budget: With the current settings, irace will require a value of 'maxExperiments' of at least '728'.
+Execução interrompida
+
+(irace-new) D:\Users\SuperUser\OneDrive\mestrado\pesquisa\irace\cifar10-irace - exp8 - acc\irace>irace --target-runner target-runner.bat -s scenario.txt -p parameters.txt
+Warning message:
+package 'irace' was built under R version 4.4.1
+#------------------------------------------------------------------------------
+# irace: An implementation in R of (Elitist) Iterated Racing
+# Version: 3.5.6863679
+# Copyright (C) 2010-2020
+# Manuel Lopez-Ibanez     <manuel.lopez-ibanez@manchester.ac.uk>
+# Jeremie Dubois-Lacoste
+# Leslie Perez Caceres    <leslie.perez.caceres@ulb.ac.be>
+#
+# This is free software, and you are welcome to redistribute it under certain
+# conditions.  See the GNU General Public License for details. There is NO
+# WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# irace builds upon previous code from the race package:
+#     race: Racing methods for the selection of the best
+#     Copyright (C) 2003 Mauro Birattari
+#------------------------------------------------------------------------------
+# installed at: D:/Users/SuperUser/anaconda3/envs/irace-new/Lib/R/library/irace
+# called with: --target-runner target-runner.bat -s scenario.txt -p parameters.txt
+# 2024-07-26 00:27:14 -03: 10 expression(s) specifying forbidden configurations read from 'D:/Users/SuperUser/OneDrive/mestrado/pesquisa/irace/cifar10-irace - exp8 - acc/irace/forbidden.txt'
+# 2024-07-26 00:27:14 -03: Initialization
+# Elitist race
+# Elitist new instances: 1
+# Elitist limit: 2
+# nbIterations: 7
+# minNbSurvival: 7
+# nbParameters: 38
+# seed: 123456
+# confidence level: 0.95
+# budget: 800
+# mu: 5
+# deterministic: FALSE
+
+# 2024-07-26 00:27:14 -03: Iteration 1 of 7
+# experimentsUsedSoFar: 0
+# remainingBudget: 800
+# currentBudget: 114
+# nbConfigurations: 19
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|          1|         19|         17|   -0.7578999996|         19|00:36:56|   NA|  NA|    NA|
+|-|          2|          5|          5|   -0.7482999861|         38|00:41:02|+0.90|0.95|0.0721|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:           5    mean value:    -0.7482999861
+Description of the best-so-far configuration:
+  .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+5    5                     4           0                   0             1    0.14             3    4       120           1           0           1          NA          NA          NA          NA                1                   0                   1                  NA                  NA             NA                  NA              8              5              7             NA      NA             NA             NA               9               5              11              NA              NA              NA              NA               NA               NA       NA
+
+# 2024-07-26 01:45:13 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+# 2024-07-26 01:45:13 -03: Iteration 2 of 7
+# experimentsUsedSoFar: 38
+# remainingBudget: 762
+# currentBudget: 127
+# nbConfigurations: 19
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|          3|         19|         31|   -0.7723000050|         19|00:41:14|   NA|  NA|    NA|
+|-|          1|          6|         31|   -0.7833999991|         33|00:25:08|+0.94|0.97|0.0940|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:           5    mean value:    -0.7562333147
+Description of the best-so-far configuration:
+  .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+5    5                     4           0                   0             1    0.14             3    4       120           1           0           1          NA          NA          NA          NA                1                   0                   1                  NA                  NA             NA                  NA              8              5              7             NA      NA             NA             NA               9               5              11              NA              NA              NA              NA               NA               NA       NA
+
+# 2024-07-26 02:51:38 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA
+            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+# 2024-07-26 02:51:38 -03: Iteration 3 of 7
+# experimentsUsedSoFar: 71
+# remainingBudget: 729
+# currentBudget: 145
+# nbConfigurations: 20
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|          4|         20|         31|   -0.7921000123|         20|01:07:21|   NA|  NA|    NA|
+|-|          1|          6|         31|   -0.7933000028|         34|00:40:34|+0.77|0.89|0.0975|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:           5    mean value:    -0.7578249872
+Description of the best-so-far configuration:
+  .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+5    5                     4           0                   0             1    0.14             3    4       120           1           0           1          NA          NA          NA          NA                1                   0                   1                  NA                  NA
+             NA                  NA              8              5              7             NA      NA             NA             NA               9               5              11              NA              NA              NA              NA               NA               NA       NA
+
+# 2024-07-26 04:39:35 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             47       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA
+          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+# 2024-07-26 04:39:35 -03: Iteration 4 of 7
+# experimentsUsedSoFar: 105
+# remainingBudget: 695
+# currentBudget: 173
+# nbConfigurations: 21
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|          5|         21|         49|   -0.8084999919|         21|01:28:51|   NA|  NA|    NA|
+|-|          1|          7|         49|   -0.8096999824|         36|01:02:49|+0.96|0.98|0.0374|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:           5    mean value:    -0.7613399863
+Description of the best-so-far configuration:
+  .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+5    5                     4           0                   0             1    0.14             3    4       120           1           0           1          NA          NA          NA          NA                1                   0                   1                  NA                  NA             NA                  NA              8              5              7             NA      NA             NA             NA               9               5              11              NA              NA              NA              NA               NA               NA       NA
+
+# 2024-07-26 07:11:16 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+# 2024-07-26 07:11:16 -03: Iteration 5 of 7
+# experimentsUsedSoFar: 141
+# remainingBudget: 659
+# currentBudget: 219
+# nbConfigurations: 25
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|          6|         25|         49|   -0.8123999834|         25|01:45:44|   NA|  NA|    NA|
+|-|          1|          7|         49|   -0.8116499782|         43|01:10:25|+1.00|1.00|0.0126|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:           5    mean value:    -0.7594166597
+Description of the best-so-far configuration:
+  .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+5    5                     4           0                   0             1    0.14             3    4       120           1           0           1          NA          NA          NA          NA                1                   0                   1                  NA                  NA
+             NA                  NA              8              5              7             NA      NA             NA             NA               9               5              11              NA              NA              NA              NA               NA               NA       NA
+
+# 2024-07-26 10:07:26 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+5                      4           0                   0             1    0.14             34       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+# 2024-07-26 10:07:27 -03: Iteration 6 of 7
+# experimentsUsedSoFar: 184
+# remainingBudget: 616
+# currentBudget: 308
+# nbConfigurations: 35
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|          7|         35|         49|   -0.8162000179|         35|02:30:05|   NA|  NA|    NA|
+|-|          3|          7|         49|   -0.8153499961|         64|02:07:06|+1.00|1.00|0.0353|
+|.|          1|          7|         49|   -0.8138666550|         64|00:00:00|+0.98|0.98|0.0412|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:           5    mean value:    -0.7612857052
+Description of the best-so-far configuration:
+  .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+5    5                     4           0                   0             1    0.14             3    4       120           1           0           1          NA          NA          NA          NA                1                   0                   1                  NA                  NA
+             NA                  NA              8              5              7             NA      NA             NA             NA               9               5              11              NA              NA              NA              NA               NA               NA       NA
+
+# 2024-07-26 14:44:39 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+# 2024-07-26 14:44:39 -03: Iteration 7 of 7
+# experimentsUsedSoFar: 248
+# remainingBudget: 552
+# currentBudget: 552
+# nbConfigurations: 60
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|          8|         60|         49|   -0.8174999952|         60|04:34:51|   NA|  NA|    NA|
+|-|          2|          9|         49|   -0.8120999932|        115|04:14:52|+0.92|0.96|0.0487|
+|-|          1|          8|         49|   -0.8116999865|        117|00:11:32|+0.90|0.94|0.0640|
+|-|          7|          7|         49|   -0.8128249943|        118|00:04:19|+0.93|0.95|0.0557|
+|.|          5|          7|         49|   -0.8119599938|        118|00:00:00|+0.94|0.95|0.0480|
+|.|          6|          7|         49|   -0.8120333254|        118|00:00:00|+0.95|0.95|0.0445|
+|.|          3|          7|         49|   -0.8123857038|        118|00:00:00|+0.95|0.96|0.0422|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          31    mean value:    -0.7851000056
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+31   31                     5           0                   0             2    0.29             3     8       219           1           0           0           0          NA          NA          NA                 1                   0                   1                   1                  NA              NA                  NA              5              6              8              5       NA             NA             NA               5               5               5
+5              NA              NA              NA               94               NA        8
+
+# 2024-07-26 23:50:16 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+# 2024-07-26 23:50:16 -03: Iteration 8 of 8
+# experimentsUsedSoFar: 366
+# remainingBudget: 434
+# currentBudget: 434
+# nbConfigurations: 49
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|          9|         49|         49|   -0.8137000203|         49|03:32:51|   NA|  NA|    NA|
+|-|          3|          8|         49|   -0.8140999973|         91|03:16:53|+0.93|0.96|0.0537|
+|-|          2|          7|         49|   -0.8116333286|         92|00:02:49|+0.98|0.98|0.0350|
+|.|          5|          7|         49|   -0.8108499944|         92|00:00:00|+0.98|0.99|0.0313|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          31    mean value:    -0.7862444520
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+31   31                     5           0                   0             2    0.29             3     8       219           1           0           0           0          NA          NA          NA                 1                   0                   1                   1                  NA              NA                  NA              5              6              8              5       NA             NA             NA               5               5               5
+5              NA              NA              NA               94               NA        8
+
+# 2024-07-27 06:42:51 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+49                     4           0                   0             2    0.38             44        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+# 2024-07-27 06:42:51 -03: Iteration 9 of 9
+# experimentsUsedSoFar: 458
+# remainingBudget: 342
+# currentBudget: 342
+# nbConfigurations: 40
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         10|         40|         49|   -0.8210999966|         40|02:22:22|   NA|  NA|    NA|
+|-|          6|          9|         49|   -0.8167499900|         73|01:40:58|+0.97|0.98|0.0102|
+|-|          9|          7|         49|   -0.8157333334|         75|00:28:37|+0.98|0.98|0.0164|
+|.|          8|          7|         49|   -0.8161749989|         75|00:00:00|+0.92|0.94|0.0554|
+|.|          5|          7|         49|   -0.8146399975|         75|00:00:00|+0.94|0.95|0.0470|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          31    mean value:    -0.7880800068
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+31   31                     5           0                   0             2    0.29             3     8       219           1           0           0           0          NA          NA          NA                 1                   0                   1                   1                  NA              NA                  NA              5              6              8              5       NA             NA             NA               5               5               5
+5              NA              NA              NA               94               NA        8
+
+# 2024-07-27 11:14:50 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+49                     4           0                   0             2    0.38             44        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+# 2024-07-27 11:14:51 -03: Iteration 10 of 10
+# experimentsUsedSoFar: 533
+# remainingBudget: 267
+# currentBudget: 267
+# nbConfigurations: 30
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         11|         30|         49|   -0.8240000010|         30|02:29:23|   NA|  NA|    NA|
+|-|          3|          7|         49|   -0.8192499876|         53|01:54:42|+1.00|1.00|0.0350|
+|.|          7|          7|         49|   -0.8182333310|         53|00:00:00|+1.00|1.00|0.0257|
+|.|          5|          7|         49|   -0.8157999963|         53|00:00:00|+1.00|1.00|0.0250|
+|.|          9|          7|         49|   -0.8153800011|         53|00:00:00|+0.99|0.99|0.0240|
+|.|          2|          7|         49|   -0.8139333328|         53|00:00:00|+0.99|0.99|0.0244|
+|.|          1|          7|         49|   -0.8134999956|         53|00:00:00|+0.98|0.99|0.0273|
+|.|         10|          7|         49|   -0.8144499958|         53|00:00:00|+0.98|0.99|0.0265|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          31    mean value:    -0.7902818268
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+31   31                     5           0                   0             2    0.29             3     8       219           1           0           0           0          NA          NA          NA                 1                   0                   1                   1                  NA              NA                  NA              5              6              8              5       NA             NA             NA               5               5               5
+5              NA              NA              NA               94               NA        8
+
+# 2024-07-27 15:38:58 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+# 2024-07-27 15:38:58 -03: Iteration 11 of 11
+# experimentsUsedSoFar: 586
+# remainingBudget: 214
+# currentBudget: 214
+# nbConfigurations: 24
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         12|         24|         49|   -0.8170999885|         24|01:44:07|   NA|  NA|    NA|
+|-|          4|         10|         49|   -0.8202999830|         42|01:22:43|+0.90|0.95|0.0589|
+|-|         11|          7|         49|   -0.8215333223|         45|00:21:15|+0.90|0.94|0.0518|
+|.|          3|          7|         49|   -0.8197749853|         45|00:00:00|+0.93|0.95|0.0616|
+|.|          1|          7|         49|   -0.8179999828|         45|00:00:00|+0.94|0.95|0.0521|
+|.|          7|          7|         49|   -0.8176999887|         45|00:00:00|+0.95|0.95|0.0444|
+|.|          6|          7|         49|   -0.8169428451|         45|00:00:00|+0.95|0.96|0.0402|
+|.|          8|          7|         49|   -0.8170124888|         45|00:00:00|+0.93|0.94|0.0520|
+|.|          9|          7|         49|   -0.8166444368|         45|00:00:00|+0.93|0.94|0.0469|
+|.|          2|          7|         49|   -0.8156499922|         45|00:00:00|+0.94|0.94|0.0461|
+|.|          5|          7|         49|   -0.8149999922|         45|00:00:00|+0.94|0.95|0.0434|
+|.|         10|          7|         49|   -0.8155083259|         45|00:00:00|+0.95|0.95|0.0418|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          49    mean value:    -0.8155083259
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+49   49                     4           0                   0             2    0.38             4     4        33           1           0           1          NA          NA          NA          NA                 1                   0                   1                  NA                  NA              NA                  NA              8              5              8             NA       NA             NA             NA               7               5               9              NA              NA              NA              NA               86               NA        5
+
+# 2024-07-27 19:07:05 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+31                     5           0                   0             2    0.29             38       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+# 2024-07-27 19:07:05 -03: Iteration 12 of 12
+# experimentsUsedSoFar: 631
+# remainingBudget: 169
+# currentBudget: 169
+# nbConfigurations: 19
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         13|         19|         49|   -0.8018000126|         19|01:23:42|   NA|  NA|    NA|
+|-|          6|          7|         49|   -0.8070999980|         31|00:47:58|+1.00|1.00|0.0085|
+|.|         12|          7|         49|   -0.8104333282|         31|00:00:00|+1.00|1.00|0.0161|
+|.|          1|          7|         49|   -0.8105499893|         31|00:00:00|+1.00|1.00|0.0155|
+|.|          5|          7|         49|   -0.8101399899|         31|00:00:00|+0.99|0.99|0.0233|
+|.|         10|          7|         49|   -0.8119666576|         31|00:00:00|+0.98|0.98|0.0214|
+|.|          8|          7|         49|   -0.8127571344|         31|00:00:00|+0.95|0.96|0.0411|
+|.|          3|          7|         49|   -0.8129749894|         31|00:00:00|+0.95|0.96|0.0417|
+|.|          9|          7|         49|   -0.8130555484|         31|00:00:00|+0.96|0.96|0.0393|
+|.|         11|          7|         49|   -0.8141499937|         31|00:00:00|+0.96|0.96|0.0361|
+|.|          7|          7|         49|   -0.8143363595|         31|00:00:00|+0.96|0.96|0.0335|
+|.|          4|          7|         49|   -0.8150999943|         31|00:00:00|+0.95|0.95|0.0420|
+|.|          2|          7|         49|   -0.8144538403|         31|00:00:00|+0.95|0.95|0.0414|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          49    mean value:    -0.8144538403
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+49   49                     4           0                   0             2    0.38             4     4        33           1           0           1          NA          NA          NA          NA                 1                   0                   1                  NA                  NA              NA                  NA              8              5              8             NA       NA             NA             NA               7               5               9              NA              NA              NA              NA               86               NA        5
+
+# 2024-07-27 21:18:47 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+# 2024-07-27 21:18:47 -03: Iteration 13 of 13
+# experimentsUsedSoFar: 662
+# remainingBudget: 138
+# currentBudget: 138
+# nbConfigurations: 16
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         14|         16|         49|   -0.8032000065|         16|01:23:05|   NA|  NA|    NA|
+|-|          1|          8|         49|   -0.8070499897|         25|00:51:16|+0.98|0.99|0.0319|
+|-|         13|          7|         49|   -0.8052999973|         26|00:05:26|+0.98|0.98|0.0424|
+|.|          8|          7|         49|   -0.8083499968|         26|00:00:00|+0.92|0.94|0.0684|
+|.|          5|          7|         49|   -0.8083799958|         26|00:00:00|+0.94|0.95|0.0570|
+|.|         12|          7|         49|   -0.8098333279|         26|00:00:00|+0.94|0.95|0.0476|
+|.|         11|          7|         49|   -0.8118571384|         26|00:00:00|+0.95|0.96|0.0428|
+|.|          9|          7|         49|   -0.8120874986|         26|00:00:00|+0.95|0.96|0.0384|
+|.|          4|          7|         49|   -0.8133555518|         26|00:00:00|+0.93|0.94|0.0455|
+|.|         10|          7|         49|   -0.8141299963|         26|00:00:00|+0.94|0.94|0.0437|
+|.|          2|          7|         49|   -0.8134545413|         26|00:00:00|+0.94|0.95|0.0441|
+|.|          7|          7|         49|   -0.8136833310|         26|00:00:00|+0.95|0.95|0.0410|
+|.|          6|          7|         49|   -0.8135846120|         26|00:00:00|+0.95|0.95|0.0394|
+|.|          3|          7|         49|   -0.8136499950|         26|00:00:00|+0.95|0.96|0.0407|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          49    mean value:    -0.8136499950
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+49   49                     4           0                   0             2    0.38             4     4        33           1           0           1          NA          NA          NA          NA                 1                   0                   1                  NA                  NA              NA                  NA              8              5              8             NA       NA             NA             NA               7               5               9              NA              NA              NA              NA               86               NA        5
+
+# 2024-07-27 23:38:36 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+# 2024-07-27 23:38:36 -03: Iteration 14 of 14
+# experimentsUsedSoFar: 688
+# remainingBudget: 112
+# currentBudget: 112
+# nbConfigurations: 14
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         15|         14|         49|   -0.8154000044|         14|01:27:25|   NA|  NA|    NA|
+|-|          4|          7|         49|   -0.8194499910|         21|00:42:38|+0.89|0.95|0.1507|
+|.|          3|          7|         49|   -0.8177999854|         21|00:00:00|+0.93|0.95|0.0971|
+|.|         13|          7|         49|   -0.8137999922|         21|00:00:00|+0.93|0.95|0.0805|
+|.|          9|          7|         49|   -0.8137799978|         21|00:00:00|+0.94|0.95|0.0669|
+|.|          5|          7|         49|   -0.8128999968|         21|00:00:00|+0.95|0.95|0.0573|
+|.|         12|          7|         49|   -0.8134999956|         21|00:00:00|+0.95|0.96|0.0500|
+|.|         10|          7|         49|   -0.8144499958|         21|00:00:00|+0.95|0.96|0.0466|
+|.|         14|          7|         49|   -0.8131999969|         21|00:00:00|+0.96|0.96|0.0443|
+|.|          2|          7|         49|   -0.8125499964|         21|00:00:00|+0.96|0.97|0.0434|
+|.|          8|          7|         49|   -0.8129999963|         21|00:00:00|+0.95|0.95|0.0486|
+|.|          1|          7|         49|   -0.8128249943|         21|00:00:00|+0.95|0.95|0.0480|
+|.|          6|          7|         49|   -0.8127923012|         21|00:00:00|+0.95|0.95|0.0463|
+|.|          7|          7|         49|   -0.8130357095|         21|00:00:00|+0.95|0.96|0.0436|
+|.|         11|          7|         49|   -0.8137666623|         21|00:00:00|+0.95|0.96|0.0415|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          49    mean value:    -0.8137666623
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+49   49                     4           0                   0             2    0.38             4     4        33           1           0           1          NA          NA          NA          NA                 1                   0                   1                  NA                  NA              NA                  NA              8              5              8             NA       NA             NA             NA               7               5               9              NA              NA              NA              NA               86               NA        5
+
+# 2024-07-28 01:48:40 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+# 2024-07-28 01:48:40 -03: Iteration 15 of 15
+# experimentsUsedSoFar: 709
+# remainingBudget: 91
+# currentBudget: 91
+# nbConfigurations: 12
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         16|         12|         49|   -0.8174999952|         12|00:43:44|   NA|  NA|    NA|
+|-|         13|          7|         49|   -0.8096500039|         17|00:10:21|+0.96|0.98|0.0125|
+|.|          5|          7|         49|   -0.8092666666|         17|00:00:00|+0.98|0.98|0.0332|
+|.|         11|          7|         49|   -0.8129500002|         17|00:00:00|+0.98|0.99|0.0240|
+|.|          2|          7|         49|   -0.8116999984|         17|00:00:00|+0.99|0.99|0.0218|
+|.|         14|          7|         49|   -0.8102833331|         17|00:00:00|+0.99|0.99|0.0289|
+|.|         12|          7|         49|   -0.8112571410|         17|00:00:00|+0.98|0.99|0.0272|
+|.|          8|          7|         49|   -0.8120374978|         17|00:00:00|+0.96|0.96|0.0380|
+|.|          3|          7|         49|   -0.8123111063|         17|00:00:00|+0.96|0.97|0.0370|
+|.|          9|          7|         49|   -0.8124499977|         17|00:00:00|+0.96|0.97|0.0362|
+|.|          7|          7|         49|   -0.8127909086|         17|00:00:00|+0.96|0.97|0.0339|
+|.|         10|          7|         49|   -0.8134833326|         17|00:00:00|+0.97|0.97|0.0330|
+|.|          6|          7|         49|   -0.8133999980|         17|00:00:00|+0.97|0.97|0.0322|
+|.|         15|          7|         49|   -0.8135428556|         17|00:00:00|+0.97|0.97|0.0324|
+|.|          1|          7|         49|   -0.8133666635|         17|00:00:00|+0.97|0.97|0.0331|
+|.|          4|          7|         49|   -0.8139999956|         17|00:00:00|+0.96|0.96|0.0401|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          49    mean value:    -0.8139999956
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+49   49                     4           0                   0             2    0.38             4     4        33           1           0           1          NA          NA          NA          NA                 1                   0                   1                  NA                  NA              NA                  NA              8              5              8             NA       NA             NA             NA               7               5               9              NA              NA              NA              NA               86               NA        5
+
+# 2024-07-28 02:42:47 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+# 2024-07-28 02:42:47 -03: Iteration 16 of 16
+# experimentsUsedSoFar: 726
+# remainingBudget: 74
+# currentBudget: 74
+# nbConfigurations: 10
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         17|         10|         49|   -0.8147000074|         10|00:46:23|   NA|  NA|    NA|
+|-|          3|          7|         49|   -0.8145999908|         13|00:15:57|+0.96|0.98|0.0394|
+|.|         12|          7|         49|   -0.8154333234|         13|00:00:00|+0.98|0.98|0.0297|
+|.|         15|          7|         49|   -0.8154249936|         13|00:00:00|+0.98|0.98|0.0298|
+|.|          5|          7|         49|   -0.8140399933|         13|00:00:00|+0.98|0.98|0.0307|
+|.|          1|          7|         49|   -0.8135166566|         13|00:00:00|+0.98|0.98|0.0325|
+|.|          2|          7|         49|   -0.8125428472|         13|00:00:00|+0.98|0.98|0.0308|
+|.|         11|          7|         49|   -0.8139749914|         13|00:00:00|+0.98|0.98|0.0281|
+|.|          4|          7|         49|   -0.8150333232|         13|00:00:00|+0.96|0.96|0.0422|
+|.|          6|          7|         49|   -0.8147699893|         13|00:00:00|+0.96|0.96|0.0398|
+|.|          8|          7|         49|   -0.8150181716|         13|00:00:00|+0.94|0.95|0.0464|
+|.|         16|          7|         49|   -0.8152249902|         13|00:00:00|+0.95|0.95|0.0439|
+|.|         14|          7|         49|   -0.8142999915|         13|00:00:00|+0.95|0.95|0.0435|
+|.|         13|          7|         49|   -0.8134071359|         13|00:00:00|+0.95|0.96|0.0430|
+|.|          7|          7|         49|   -0.8135933280|         13|00:00:00|+0.95|0.96|0.0407|
+|.|         10|          7|         49|   -0.8140624948|         13|00:00:00|+0.96|0.96|0.0394|
+|.|          9|          7|         49|   -0.8140411728|         13|00:00:00|+0.96|0.96|0.0382|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          49    mean value:    -0.8140411728
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+49   49                     4           0                   0             2    0.38             4     4        33           1           0           1          NA          NA          NA          NA                 1                   0                   1                  NA                  NA              NA                  NA              8              5              8             NA       NA             NA             NA               7               5               9              NA              NA              NA              NA               86               NA        5
+
+# 2024-07-28 03:45:08 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+# 2024-07-28 03:45:08 -03: Iteration 17 of 17
+# experimentsUsedSoFar: 739
+# remainingBudget: 61
+# currentBudget: 61
+# nbConfigurations: 10
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         18|         10|         49|   -0.8187999725|         10|00:45:34|   NA|  NA|    NA|
+|=|          1|         10|         49|   -0.8148499727|         13|00:09:45|+0.79|0.90|0.0235|
+|-|          3|          7|         49|   -0.8147333066|         16|00:13:09|+0.98|0.98|0.0372|
+|.|          6|          7|         49|   -0.8141499758|         16|00:00:00|+0.98|0.98|0.0313|
+|.|          8|          7|         49|   -0.8148199797|         16|00:00:00|+0.94|0.95|0.0478|
+|.|         13|          7|         49|   -0.8126499852|         16|00:00:00|+0.94|0.95|0.0433|
+|.|         12|          7|         49|   -0.8132856999|         16|00:00:00|+0.95|0.96|0.0395|
+|.|          2|          7|         49|   -0.8124624863|         16|00:00:00|+0.95|0.96|0.0364|
+|.|          9|          7|         49|   -0.8125999901|         16|00:00:00|+0.96|0.96|0.0364|
+|.|         10|          7|         49|   -0.8134499907|         16|00:00:00|+0.96|0.96|0.0348|
+|.|          5|          7|         49|   -0.8129999909|         16|00:00:00|+0.96|0.96|0.0349|
+|.|         17|          7|         49|   -0.8131416589|         16|00:00:00|+0.96|0.97|0.0325|
+|.|         11|          7|         49|   -0.8139769160|         16|00:00:00|+0.96|0.97|0.0306|
+|.|         15|          7|         49|   -0.8140785652|         16|00:00:00|+0.97|0.97|0.0310|
+|.|          4|          7|         49|   -0.8147066593|         16|00:00:00|+0.95|0.96|0.0394|
+|.|          7|          7|         49|   -0.8147999942|         16|00:00:00|+0.96|0.96|0.0375|
+|.|         14|          7|         49|   -0.8141176420|         16|00:00:00|+0.96|0.96|0.0376|
+|.|         16|          7|         49|   -0.8143055505|         16|00:00:00|+0.96|0.96|0.0366|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          49    mean value:    -0.8143055505
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+49   49                     4           0                   0             2    0.38             4     4        33           1           0           1          NA          NA          NA          NA                 1                   0                   1                  NA                  NA              NA                  NA              8              5              8             NA       NA             NA             NA               7               5               9              NA              NA              NA              NA               86               NA        5
+
+# 2024-07-28 04:53:38 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+# 2024-07-28 04:53:38 -03: Iteration 18 of 18
+# experimentsUsedSoFar: 755
+# remainingBudget: 45
+# currentBudget: 45
+# nbConfigurations: 9
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         19|          9|         49|   -0.8086000085|          9|00:46:16|   NA|  NA|    NA|
+|-|          4|          7|         49|   -0.8160499930|         11|00:10:43|+0.89|0.95|0.0829|
+|.|          3|          7|         49|   -0.8155333201|         11|00:00:00|+0.93|0.95|0.0772|
+|.|         17|          7|         49|   -0.8153249919|         11|00:00:00|+0.93|0.95|0.0587|
+|.|         16|          7|         49|   -0.8157599926|         11|00:00:00|+0.94|0.95|0.0516|
+|.|          2|          7|         49|   -0.8142499924|         11|00:00:00|+0.95|0.96|0.0464|
+|.|         10|          7|         49|   -0.8152285644|         11|00:00:00|+0.96|0.97|0.0430|
+|.|         18|          7|         49|   -0.8156749904|         11|00:00:00|+0.96|0.97|0.0379|
+|.|         12|          7|         49|   -0.8158333235|         11|00:00:00|+0.96|0.97|0.0354|
+|.|         11|          7|         49|   -0.8166499913|         11|00:00:00|+0.97|0.97|0.0328|
+|.|          1|          7|         49|   -0.8161272623|         11|00:00:00|+0.96|0.97|0.0331|
+|.|          9|          7|         49|   -0.8159249922|         11|00:00:00|+0.96|0.97|0.0319|
+|.|          5|          7|         49|   -0.8153538383|         11|00:00:00|+0.97|0.97|0.0312|
+|.|          6|          7|         49|   -0.8151428487|         11|00:00:00|+0.97|0.97|0.0302|
+|.|         13|          7|         49|   -0.8142533263|         11|00:00:00|+0.97|0.97|0.0302|
+|.|         15|          7|         49|   -0.8143249936|         11|00:00:00|+0.97|0.97|0.0312|
+|.|          8|          7|         49|   -0.8145117584|         11|00:00:00|+0.96|0.96|0.0362|
+|.|         14|          7|         49|   -0.8138833278|         11|00:00:00|+0.96|0.96|0.0366|
+|.|          7|          7|         49|   -0.8140052588|         11|00:00:00|+0.96|0.96|0.0351|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          49    mean value:    -0.8140052588
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+49   49                     4           0                   0             2    0.38             4     4        33           1           0           1          NA          NA          NA          NA                 1                   0                   1                  NA                  NA              NA                  NA              8              5              8             NA       NA             NA             NA               7               5               9              NA              NA              NA              NA               86               NA        5
+
+# 2024-07-28 05:50:39 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+# 2024-07-28 05:50:39 -03: Iteration 19 of 19
+# experimentsUsedSoFar: 766
+# remainingBudget: 34
+# currentBudget: 34
+# nbConfigurations: 8
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|       Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+|x|         20|          8|         49|   -0.8167999983|          8|00:42:50|   NA|  NA|    NA|
+|=|         14|          8|         49|   -0.8100000024|          9|00:05:49|+0.98|0.99|0.0146|
+|-|         16|          7|         49|   -0.8125000000|         10|00:05:50|+1.00|1.00|0.0261|
+|.|          6|          7|         49|   -0.8124749959|         10|00:00:00|+0.98|0.99|0.0250|
+|.|          1|          7|         49|   -0.8121599913|         10|00:00:00|+0.98|0.98|0.0258|
+|.|         13|          7|         49|   -0.8104333282|         10|00:00:00|+0.98|0.98|0.0261|
+|.|          2|          7|         49|   -0.8098999943|         10|00:00:00|+0.98|0.98|0.0269|
+|.|         18|          7|         49|   -0.8110124916|         10|00:00:00|+0.98|0.98|0.0243|
+|.|         11|          7|         49|   -0.8124555482|         10|00:00:00|+0.98|0.98|0.0218|
+|.|         10|          7|         49|   -0.8133199930|         10|00:00:00|+0.98|0.98|0.0207|
+|.|          3|          7|         49|   -0.8134272640|         10|00:00:00|+0.98|0.99|0.0234|
+|.|         15|          7|         49|   -0.8135916591|         10|00:00:00|+0.99|0.99|0.0242|
+|.|         17|          7|         49|   -0.8136769166|         10|00:00:00|+0.98|0.98|0.0231|
+|.|          5|          7|         49|   -0.8133071363|         10|00:00:00|+0.98|0.99|0.0242|
+|.|          8|          7|         49|   -0.8135866602|         10|00:00:00|+0.97|0.97|0.0302|
+|.|         12|          7|         49|   -0.8138062432|         10|00:00:00|+0.97|0.97|0.0295|
+|.|          4|          7|         49|   -0.8143764629|         10|00:00:00|+0.96|0.96|0.0369|
+|.|          7|          7|         49|   -0.8144777715|         10|00:00:00|+0.96|0.96|0.0354|
+|.|          9|          7|         49|   -0.8144368372|         10|00:00:00|+0.96|0.96|0.0346|
+|.|         19|          7|         49|   -0.8141449958|         10|00:00:00|+0.96|0.96|0.0333|
++-+-----------+-----------+-----------+----------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          49    mean value:    -0.8141449958
+Description of the best-so-far configuration:
+   .ID. camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2 .PARENT.
+49   49                     4           0                   0             2    0.38             4     4        33           1           0           1          NA          NA          NA          NA                 1                   0                   1                  NA                  NA              NA                  NA              8              5              8             NA       NA             NA             NA               7               5               9              NA              NA              NA              NA               86               NA        5
+
+# 2024-07-28 06:45:10 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA
+           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+# 2024-07-28 06:45:10 -03: Stopped because there is not enough budget left to race more than the minimum (7)
+# You may either increase the budget or set 'minNbSurvival' to a lower value
+# Iteration: 20
+# nbIterations: 20
+# experimentsUsedSoFar: 776
+# timeUsed: 0
+# remainingBudget: 24
+# currentBudget: 24
+# number of elites: 7
+# nbConfigurations: 7
+# Total CPU user time: 9.06, CPU sys time: 12.31, Wall-clock time: 195476.4
+# Best configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   camadasConvolucionais maxpooling1 batchNormalization1 camadasDensas dropout learningIndex batchIndex numEpocas maxpooling2 maxpooling3 maxpooling4 maxpooling5 maxpooling6 maxpooling7 maxpooling8 batchNormalization2 batchNormalization3 batchNormalization4 batchNormalization5 batchNormalization6 batchNormalization7 batchNormalization8 numFiltrosInd2 numFiltrosInd3 numFiltrosInd4 numFiltrosInd5 numFiltrosInd6 numFiltrosInd7 numFiltrosInd8 tamanhoFiltros2 tamanhoFiltros3 tamanhoFiltros4 tamanhoFiltros5 tamanhoFiltros6 tamanhoFiltros7 tamanhoFiltros8 neuroniosDensos1 neuroniosDensos2
+49                     4           0                   0             2    0.38             4
+4        33           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              8             NA
+  NA             NA             NA               7               5               9              NA          NA              NA              NA               86               NA
+31                     5           0                   0             2    0.29             3
+8       219           1           0           0           0          NA          NA          NA            1                   0                   1                   1                  NA
+         NA                  NA              5              6              8              5
+  NA             NA             NA               5               5               5               5          NA              NA              NA               94               NA
+5                      4           0                   0             1    0.14             3
+4       120           1           0           1          NA          NA          NA          NA            1                   0                   1                  NA                  NA
+         NA                  NA              8              5              7             NA
+  NA             NA             NA               9               5              11              NA          NA              NA              NA               NA               NA
+17                     3           0                   0             2    0.28             4
+5       115           0           1          NA          NA          NA          NA          NA            0                   0                  NA                  NA                  NA
+         NA                  NA              6              5             NA             NA
+  NA             NA             NA               5              11              NA              NA          NA              NA              NA              100               NA
+16                     3           1                   1             1    0.35             3
+5        31           1           0          NA          NA          NA          NA          NA            1                   1                  NA                  NA                  NA
+         NA                  NA              6              8             NA             NA
+  NA             NA             NA              11               7              NA              NA          NA              NA              NA               NA               NA
+8                      1           1                   1             2    0.33             4
+7       266          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA              100               NA
+1                      1           1                   0             1    0.38             4
+7       186          NA          NA          NA          NA          NA          NA          NA           NA                  NA                  NA                  NA                  NA
+         NA                  NA             NA             NA             NA             NA
+  NA             NA             NA              NA              NA              NA              NA          NA              NA              NA               NA               NA
+# Best configurations as commandlines (first number is the configuration ID; same order as above):
+49  --nc=4 --mp1=0 --mp2=1 --mp3=0 --mp4=1 --bn1=0 --bn2=1 --bn3=0 --bn4=1 --nf2=8 --nf3=5 --nf4=8 --tf2=7 --tf3=5 --tf4=9 --nd=2 --nd1=86 --dr=0.38 --li=4 --bti=4 --ne=33
+31  --nc=5 --mp1=0 --mp2=1 --mp3=0 --mp4=0 --mp5=0 --bn1=0 --bn2=1 --bn3=0 --bn4=1 --bn5=1 --nf2=5 --nf3=6 --nf4=8 --nf5=5 --tf2=5 --tf3=5 --tf4=5 --tf5=5 --nd=2 --nd1=94 --dr=0.29 --li=3 --bti=8 --ne=219
+5   --nc=4 --mp1=0 --mp2=1 --mp3=0 --mp4=1 --bn1=0 --bn2=1 --bn3=0 --bn4=1 --nf2=8 --nf3=5 --nf4=7 --tf2=9 --tf3=5 --tf4=11 --nd=1 --dr=0.14 --li=3 --bti=4 --ne=120
+17  --nc=3 --mp1=0 --mp2=0 --mp3=1 --bn1=0 --bn2=0 --bn3=0 --nf2=6 --nf3=5 --tf2=5 --tf3=11 --nd=2 --nd1=100 --dr=0.28 --li=4 --bti=5 --ne=115
+16  --nc=3 --mp1=1 --mp2=1 --mp3=0 --bn1=1 --bn2=1 --bn3=1 --nf2=6 --nf3=8 --tf2=11 --tf3=7 --nd=1 --dr=0.35 --li=3 --bti=5 --ne=31
+8   --nc=1 --mp1=1 --bn1=1 --nd=2 --nd1=100 --dr=0.33 --li=4 --bti=7 --ne=266
+1   --nc=1 --mp1=1 --bn1=0 --nd=1 --dr=0.38 --li=4 --bti=7 --ne=186
+
+
+# Testing of elite configurations: 1
+# Testing iteration configurations: FALSE
+# 2024-07-28 06:45:10 -03: No test instances, skip testing
+
+(irace-new) D:\Users\SuperUser\OneDrive\mestrado\pesquisa\irace\cifar10-irace - exp8 - acc\irace>    4 --target-runner target-runner.bat -s scenario.txt -p parameters.txt
+'4' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+(irace-new) D:\Users\SuperUser\OneDrive\mestrado\pesquisa\irace\cifar10-irace - exp8 - acc\irace>
