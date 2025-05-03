@@ -1,4 +1,4 @@
-# deeplearningwithirace
+# Avaliação do Uso da Ferramenta irace para a Otimização de Hiperparâmetros de Redes Neurais Convolucionais
 
  Este repositório contém os códigos e resultados dos experimentos do artigo intitulado "Avaliação do Uso da Ferramenta irace para a Otimização de Hiperparâmetros de Redes Neurais Convolucionais" submetido para o Simpósio Brasileiro de Pesquisa Operacional (SBPO 2025).
  Autores:
